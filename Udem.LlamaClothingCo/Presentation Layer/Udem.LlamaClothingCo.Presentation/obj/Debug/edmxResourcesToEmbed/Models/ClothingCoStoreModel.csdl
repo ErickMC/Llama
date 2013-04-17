@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClothingDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="ClothingDBEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="BillingAddress" EntityType="ClothingDBModel.BillingAddress" />
+    <EntitySet Name="Cart" EntityType="ClothingDBModel.Cart" />
+    <EntitySet Name="Client" EntityType="ClothingDBModel.Client" />
+    <EntitySet Name="ClientType" EntityType="ClothingDBModel.ClientType" />
+    <EntitySet Name="Item" EntityType="ClothingDBModel.Item" />
+    <EntitySet Name="ItemType" EntityType="ClothingDBModel.ItemType" />
+    <EntitySet Name="Sale" EntityType="ClothingDBModel.Sale" />
+    <EntitySet Name="SaleDetail" EntityType="ClothingDBModel.SaleDetail" />
+    <EntitySet Name="ShippingAddress" EntityType="ClothingDBModel.ShippingAddress" />
+    <EntitySet Name="User" EntityType="ClothingDBModel.User" />
+    <AssociationSet Name="ClientTypeClient" Association="ClothingDBModel.ClientTypeClient">
+      <End Role="ClientType" EntitySet="ClientType" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="ItemSaleDetail" Association="ClothingDBModel.ItemSaleDetail">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="SaleDetail" EntitySet="SaleDetail" />
+    </AssociationSet>
+    <AssociationSet Name="SaleSaleDetail" Association="ClothingDBModel.SaleSaleDetail">
+      <End Role="Sale" EntitySet="Sale" />
+      <End Role="SaleDetail" EntitySet="SaleDetail" />
+    </AssociationSet>
+    <AssociationSet Name="ClientSale" Association="ClothingDBModel.ClientSale">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Sale" EntitySet="Sale" />
+    </AssociationSet>
+    <AssociationSet Name="ShippingAddressSale" Association="ClothingDBModel.ShippingAddressSale">
+      <End Role="ShippingAddress" EntitySet="ShippingAddress" />
+      <End Role="Sale" EntitySet="Sale" />
+    </AssociationSet>
+    <AssociationSet Name="ItemCart" Association="ClothingDBModel.ItemCart">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="BillingAddressClient" Association="ClothingDBModel.BillingAddressClient">
+      <End Role="BillingAddress" EntitySet="BillingAddress" />
+      <End Role="Client" EntitySet="Client" />
+    </AssociationSet>
+    <AssociationSet Name="ItemTypeItem" Association="ClothingDBModel.ItemTypeItem">
+      <End Role="ItemType" EntitySet="ItemType" />
+      <End Role="Item" EntitySet="Item" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BillingAddress">
+    <Key>
+      <PropertyRef Name="BillingAddressID" />
+    </Key>
+    <Property Name="Street" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Number" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsAddressActive" Type="Boolean" />
+    <Property Name="BillingAddressID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="ClothingDBModel.BillingAddressClient" FromRole="BillingAddress" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="CartID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <NavigationProperty Name="Item" Relationship="ClothingDBModel.ItemCart" FromRole="Cart" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="RFC" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsClientActive" Type="Boolean" />
+    <Property Name="Telephone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ClientID" Type="Int32" Nullable="false" />
+    <Property Name="BillingAddressID" Type="Int32" Nullable="false" />
+    <Property Name="ClientTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ClientType" Relationship="ClothingDBModel.ClientTypeClient" FromRole="Client" ToRole="ClientType" />
+    <NavigationProperty Name="Sale" Relationship="ClothingDBModel.ClientSale" FromRole="Client" ToRole="Sale" />
+    <NavigationProperty Name="BillingAddress" Relationship="ClothingDBModel.BillingAddressClient" FromRole="Client" ToRole="BillingAddress" />
+  </EntityType>
+  <EntityType Name="ClientType">
+    <Key>
+      <PropertyRef Name="ClientTypeID" />
+    </Key>
+    <Property Name="TypeName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ClientTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="ClothingDBModel.ClientTypeClient" FromRole="ClientType" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Cost" Type="Double" />
+    <Property Name="IsItemActive" Type="Boolean" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="SaleDetail" Relationship="ClothingDBModel.ItemSaleDetail" FromRole="Item" ToRole="SaleDetail" />
+    <NavigationProperty Name="Cart" Relationship="ClothingDBModel.ItemCart" FromRole="Item" ToRole="Cart" />
+    <NavigationProperty Name="ItemType" Relationship="ClothingDBModel.ItemTypeItem" FromRole="Item" ToRole="ItemType" />
+  </EntityType>
+  <EntityType Name="ItemType">
+    <Key>
+      <PropertyRef Name="ItemTypeID" />
+    </Key>
+    <Property Name="TypeName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="ClothingDBModel.ItemTypeItem" FromRole="ItemType" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="SaleID" />
+    </Key>
+    <Property Name="SaleTotal" Type="Double" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="SaleID" Type="Int32" Nullable="false" />
+    <Property Name="ClientID" Type="Int32" Nullable="false" />
+    <Property Name="ShippingAddressID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="SaleDetail" Relationship="ClothingDBModel.SaleSaleDetail" FromRole="Sale" ToRole="SaleDetail" />
+    <NavigationProperty Name="Client" Relationship="ClothingDBModel.ClientSale" FromRole="Sale" ToRole="Client" />
+    <NavigationProperty Name="ShippingAddress" Relationship="ClothingDBModel.ShippingAddressSale" FromRole="Sale" ToRole="ShippingAddress" />
+  </EntityType>
+  <EntityType Name="SaleDetail">
+    <Key>
+      <PropertyRef Name="SaleDetailID" />
+    </Key>
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="SaleDetailID" Type="Int32" Nullable="false" />
+    <Property Name="SaleID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="ClothingDBModel.ItemSaleDetail" FromRole="SaleDetail" ToRole="Item" />
+    <NavigationProperty Name="Sale" Relationship="ClothingDBModel.SaleSaleDetail" FromRole="SaleDetail" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="ShippingAddress">
+    <Key>
+      <PropertyRef Name="ShippingAddressID" />
+    </Key>
+    <Property Name="Street" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Number" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsAddressActive" Type="Boolean" />
+    <Property Name="ShippingAddressID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Sale" Relationship="ClothingDBModel.ShippingAddressSale" FromRole="ShippingAddress" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UsernameID" />
+    </Key>
+    <Property Name="Password" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Role" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="UsernameID" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <Association Name="ClientTypeClient">
+    <End Type="ClothingDBModel.ClientType" Role="ClientType" Multiplicity="1" />
+    <End Type="ClothingDBModel.Client" Role="Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientType">
+        <PropertyRef Name="ClientTypeID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="ClientTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ItemSaleDetail">
+    <End Type="ClothingDBModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="ClothingDBModel.SaleDetail" Role="SaleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="SaleDetail">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SaleSaleDetail">
+    <End Type="ClothingDBModel.Sale" Role="Sale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ClothingDBModel.SaleDetail" Role="SaleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="SaleID" />
+      </Principal>
+      <Dependent Role="SaleDetail">
+        <PropertyRef Name="SaleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClientSale">
+    <End Type="ClothingDBModel.Client" Role="Client" Multiplicity="1" />
+    <End Type="ClothingDBModel.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ShippingAddressSale">
+    <End Type="ClothingDBModel.ShippingAddress" Role="ShippingAddress" Multiplicity="1" />
+    <End Type="ClothingDBModel.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShippingAddress">
+        <PropertyRef Name="ShippingAddressID" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="ShippingAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ItemCart">
+    <End Type="ClothingDBModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="ClothingDBModel.Cart" Role="Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemID" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BillingAddressClient">
+    <End Type="ClothingDBModel.BillingAddress" Role="BillingAddress" Multiplicity="1" />
+    <End Type="ClothingDBModel.Client" Role="Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BillingAddress">
+        <PropertyRef Name="BillingAddressID" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="BillingAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ItemTypeItem">
+    <End Type="ClothingDBModel.ItemType" Role="ItemType" Multiplicity="1" />
+    <End Type="ClothingDBModel.Item" Role="Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ItemType">
+        <PropertyRef Name="ItemTypeID" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="ItemTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

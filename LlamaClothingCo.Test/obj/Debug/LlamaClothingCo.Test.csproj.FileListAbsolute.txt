@@ -1,0 +1,12 @@
+C:\Llama\LlamaClothingCo.Test\bin\Debug\LlamaClothingCo.Test.dll
+C:\Llama\LlamaClothingCo.Test\bin\Debug\LlamaClothingCo.Test.pdb
+C:\Llama\LlamaClothingCo.Test\bin\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Llama\LlamaClothingCo.Test\bin\Debug\Udem.LlamaClothingCo.Entities.dll
+C:\Llama\LlamaClothingCo.Test\bin\Debug\Udem.LlamaClothingCo.Managers.dll
+C:\Llama\LlamaClothingCo.Test\bin\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Llama\LlamaClothingCo.Test\bin\Debug\Udem.LlamaClothingCo.Entities.pdb
+C:\Llama\LlamaClothingCo.Test\bin\Debug\Udem.LlamaClothingCo.Managers.pdb
+C:\Llama\LlamaClothingCo.Test\obj\Debug\LlamaClothingCo.Test.csprojResolveAssemblyReference.cache
+C:\Llama\LlamaClothingCo.Test\obj\Debug\LlamaClothingCo.Test.dll
+C:\Llama\LlamaClothingCo.Test\obj\Debug\LlamaClothingCo.Test.pdb
+C:\Llama\LlamaClothingCo.Test\bin\Debug\LlamaClothingCo.Test.dll.config

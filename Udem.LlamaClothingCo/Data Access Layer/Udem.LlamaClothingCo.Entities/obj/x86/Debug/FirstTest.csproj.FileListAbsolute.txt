@@ -1,0 +1,6 @@
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\FirstTest\FirstTest\bin\Debug\FirstTest.exe.config
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\FirstTest\FirstTest\bin\Debug\FirstTest.exe
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\FirstTest\FirstTest\bin\Debug\FirstTest.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\FirstTest\FirstTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\FirstTest\FirstTest\obj\x86\Debug\FirstTest.exe
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\FirstTest\FirstTest\obj\x86\Debug\FirstTest.pdb

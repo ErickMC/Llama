@@ -1,0 +1,16 @@
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\PruebaSale.exe.config
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.Properties.Resources.resources
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.csproj.GenerateResource.Cache
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\PruebaSale.exe
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\PruebaSale.pdb
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\Udem.LlamaClothingCo.Entities.dll
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\Udem.LlamaClothingCo.Managers.dll
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\Udem.LlamaClothingCo.Entities.pdb
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\bin\Debug\Udem.LlamaClothingCo.Managers.pdb
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.exe
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.pdb
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.CreateOrderForm.resources
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.SalesForm.resources
+C:\Llama\Udem.LlamaClothingCo\Presentation Layer\PruebaSale\obj\Debug\PruebaSale.csprojResolveAssemblyReference.cache

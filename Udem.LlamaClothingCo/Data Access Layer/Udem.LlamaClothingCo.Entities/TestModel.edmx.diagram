@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <edmx:Designer>
+    <edmx:Diagrams>
+      <Diagram Name="TestModel" ZoomLevel="67" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <EntityTypeShape EntityType="TestModel.Client" Width="2.125" PointX="0.5" PointY="0.625" Height="2.5571907552083331" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.ClientType" Width="1.5" PointX="0.625" PointY="5.5" Height="1.7879850260416665" IsExpanded="true" />
+        <AssociationConnector Association="TestModel.ClientClientType">
+          <ConnectorPoint PointX="1.265626" PointY="4.326396484375" />
+          <ConnectorPoint PointX="1.265626" PointY="4.625" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="TestModel.Item" Width="1.5" PointX="3.125" PointY="3.375" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.ItemType" Width="1.5" PointX="5.125" PointY="3.5" Height="1.5956835937499996" IsExpanded="true" />
+        <AssociationConnector Association="TestModel.ItemItemType">
+          <ConnectorPoint PointX="4.625" PointY="4.3939925130208337" />
+          <ConnectorPoint PointX="5.75" PointY="4.3939925130208337" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="TestModel.Address" Width="1.5" PointX="8.625" PointY="0.5" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.AddressType" Width="1.5" PointX="10.625" PointY="1.375" Height="1.7879850260416665" IsExpanded="true" />
+        <AssociationConnector Association="TestModel.AddressTypeAddress">
+          <ConnectorPoint PointX="10.625" PointY="3.8939925130208333" />
+          <ConnectorPoint PointX="9.375" PointY="3.8939925130208333" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="TestModel.Sale" Width="1.75" PointX="7" PointY="6.625" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.SaleDetail" Width="1.5" PointX="3" PointY="6.375" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="TestModel.ItemSaleDetail">
+          <ConnectorPoint PointX="3.8125" PointY="5.7398893229166656" />
+          <ConnectorPoint PointX="3.8125" PointY="6.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="TestModel.SaleSaleDetail">
+          <ConnectorPoint PointX="7" PointY="7.5526432291666667" />
+          <ConnectorPoint PointX="4.5" PointY="7.5526432291666667" />
+        </AssociationConnector>
+        <AssociationConnector Association="TestModel.SaleClient" />
+        <AssociationConnector Association="TestModel.ClientBillingAddress" />
+        <AssociationConnector Association="TestModel.ShippingAddressSale" />
+        <AssociationConnector Association="TestModel.ShippingAddressClient" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

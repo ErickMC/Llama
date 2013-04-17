@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ClothingDBModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ClothingDBModelStoreContainer">
+          <EntitySet Name="BillingAddress" EntityType="ClothingDBModel.Store.BillingAddress" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Cart" EntityType="ClothingDBModel.Store.Cart" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Client" EntityType="ClothingDBModel.Store.Client" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ClientType" EntityType="ClothingDBModel.Store.ClientType" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Item" EntityType="ClothingDBModel.Store.Item" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ItemType" EntityType="ClothingDBModel.Store.ItemType" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Sale" EntityType="ClothingDBModel.Store.Sale" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SaleDetail" EntityType="ClothingDBModel.Store.SaleDetail" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ShippingAddress" EntityType="ClothingDBModel.Store.ShippingAddress" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="User" EntityType="ClothingDBModel.Store.User" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+        <EntityType Name="BillingAddress">
+          <Key>
+            <PropertyRef Name="BillingAddressID" />
+          </Key>
+          <Property Name="Street" Type="nvarchar" MaxLength="100" />
+          <Property Name="Number" Type="nvarchar" MaxLength="100" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" />
+          <Property Name="State" Type="nvarchar" MaxLength="100" />
+          <Property Name="ZipCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsAddressActive" Type="bit" />
+          <Property Name="BillingAddressID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="int" Nullable="false" />
+          <Property Name="CartID" Type="int" />
+          <Property Name="ItemID" Type="int" />
+          <Property Name="Quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="ClientID" />
+          </Key>
+          <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+          <Property Name="RFC" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsClientActive" Type="bit" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="100" />
+          <Property Name="ClientID" Type="int" Nullable="false" />
+          <Property Name="BillingAddressID" Type="int" />
+          <Property Name="ClientTypeID" Type="int" />
+        </EntityType>
+        <EntityType Name="ClientType">
+          <Key>
+            <PropertyRef Name="ClientTypeID" />
+          </Key>
+          <Property Name="TypeName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="ClientTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ItemID" />
+          </Key>
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="Cost" Type="float" />
+          <Property Name="IsItemActive" Type="bit" />
+          <Property Name="ItemID" Type="int" Nullable="false" />
+          <Property Name="ItemTypeID" Type="int" />
+        </EntityType>
+        <EntityType Name="ItemType">
+          <Key>
+            <PropertyRef Name="ItemTypeID" />
+          </Key>
+          <Property Name="TypeName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="100" />
+          <Property Name="ItemTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="SaleID" />
+          </Key>
+          <Property Name="SaleTotal" Type="float" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="SaleID" Type="int" Nullable="false" />
+          <Property Name="ClientID" Type="int" />
+          <Property Name="ShippingAddressID" Type="int" />
+        </EntityType>
+        <EntityType Name="SaleDetail">
+          <Key>
+            <PropertyRef Name="SaleDetailID" />
+          </Key>
+          <Property Name="Quantity" Type="int" />
+          <Property Name="SaleDetailID" Type="int" Nullable="false" />
+          <Property Name="SaleID" Type="int" />
+          <Property Name="ItemID" Type="int" />
+        </EntityType>
+        <EntityType Name="ShippingAddress">
+          <Key>
+            <PropertyRef Name="ShippingAddressID" />
+          </Key>
+          <Property Name="Street" Type="nvarchar" MaxLength="100" />
+          <Property Name="Number" Type="nvarchar" MaxLength="100" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" />
+          <Property Name="State" Type="nvarchar" MaxLength="100" />
+          <Property Name="ZipCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsAddressActive" Type="bit" />
+          <Property Name="ShippingAddressID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UsernameID" />
+          </Key>
+          <Property Name="Password" Type="nvarchar" MaxLength="20" />
+          <Property Name="Role" Type="nvarchar" MaxLength="100" />
+          <Property Name="UsernameID" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClothingDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="ClothingDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="BillingAddress" EntityType="ClothingDBModel.BillingAddress" />
+          <EntitySet Name="Cart" EntityType="ClothingDBModel.Cart" />
+          <EntitySet Name="Client" EntityType="ClothingDBModel.Client" />
+          <EntitySet Name="ClientType" EntityType="ClothingDBModel.ClientType" />
+          <EntitySet Name="Item" EntityType="ClothingDBModel.Item" />
+          <EntitySet Name="ItemType" EntityType="ClothingDBModel.ItemType" />
+          <EntitySet Name="Sale" EntityType="ClothingDBModel.Sale" />
+          <EntitySet Name="SaleDetail" EntityType="ClothingDBModel.SaleDetail" />
+          <EntitySet Name="ShippingAddress" EntityType="ClothingDBModel.ShippingAddress" />
+          <EntitySet Name="User" EntityType="ClothingDBModel.User" />
+          <AssociationSet Name="ClientTypeClient" Association="ClothingDBModel.ClientTypeClient">
+            <End Role="ClientType" EntitySet="ClientType" />
+            <End Role="Client" EntitySet="Client" />
+          </AssociationSet>
+          <AssociationSet Name="ItemSaleDetail" Association="ClothingDBModel.ItemSaleDetail">
+            <End Role="Item" EntitySet="Item" />
+            <End Role="SaleDetail" EntitySet="SaleDetail" />
+          </AssociationSet>
+          <AssociationSet Name="SaleSaleDetail" Association="ClothingDBModel.SaleSaleDetail">
+            <End Role="Sale" EntitySet="Sale" />
+            <End Role="SaleDetail" EntitySet="SaleDetail" />
+          </AssociationSet>
+          <AssociationSet Name="ClientSale" Association="ClothingDBModel.ClientSale">
+            <End Role="Client" EntitySet="Client" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="ShippingAddressSale" Association="ClothingDBModel.ShippingAddressSale">
+            <End Role="ShippingAddress" EntitySet="ShippingAddress" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="ItemCart" Association="ClothingDBModel.ItemCart">
+            <End Role="Item" EntitySet="Item" />
+            <End Role="Cart" EntitySet="Cart" />
+          </AssociationSet>
+          <AssociationSet Name="BillingAddressClient" Association="ClothingDBModel.BillingAddressClient">
+            <End Role="BillingAddress" EntitySet="BillingAddress" />
+            <End Role="Client" EntitySet="Client" />
+          </AssociationSet>
+          <AssociationSet Name="ItemTypeItem" Association="ClothingDBModel.ItemTypeItem">
+            <End Role="ItemType" EntitySet="ItemType" />
+            <End Role="Item" EntitySet="Item" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BillingAddress">
+          <Key>
+            <PropertyRef Name="BillingAddressID" />
+          </Key>
+          <Property Name="Street" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Number" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ZipCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsAddressActive" Type="Boolean" />
+          <Property Name="BillingAddressID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Client" Relationship="ClothingDBModel.BillingAddressClient" FromRole="BillingAddress" ToRole="Client" />
+        </EntityType>
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="RecordID" />
+          </Key>
+          <Property Name="RecordID" Type="Int32" Nullable="false" />
+          <Property Name="CartID" Type="Int32" Nullable="false" />
+          <Property Name="ItemID" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" />
+          <NavigationProperty Name="Item" Relationship="ClothingDBModel.ItemCart" FromRole="Cart" ToRole="Item" />
+        </EntityType>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="ClientID" />
+          </Key>
+          <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="RFC" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsClientActive" Type="Boolean" />
+          <Property Name="Telephone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ClientID" Type="Int32" Nullable="false" />
+          <Property Name="BillingAddressID" Type="Int32" Nullable="false" />
+          <Property Name="ClientTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ClientType" Relationship="ClothingDBModel.ClientTypeClient" FromRole="Client" ToRole="ClientType" />
+          <NavigationProperty Name="Sale" Relationship="ClothingDBModel.ClientSale" FromRole="Client" ToRole="Sale" />
+          <NavigationProperty Name="BillingAddress" Relationship="ClothingDBModel.BillingAddressClient" FromRole="Client" ToRole="BillingAddress" />
+        </EntityType>
+        <EntityType Name="ClientType">
+          <Key>
+            <PropertyRef Name="ClientTypeID" />
+          </Key>
+          <Property Name="TypeName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ClientTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Client" Relationship="ClothingDBModel.ClientTypeClient" FromRole="ClientType" ToRole="Client" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ItemID" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Cost" Type="Double" />
+          <Property Name="IsItemActive" Type="Boolean" />
+          <Property Name="ItemID" Type="Int32" Nullable="false" />
+          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SaleDetail" Relationship="ClothingDBModel.ItemSaleDetail" FromRole="Item" ToRole="SaleDetail" />
+          <NavigationProperty Name="Cart" Relationship="ClothingDBModel.ItemCart" FromRole="Item" ToRole="Cart" />
+          <NavigationProperty Name="ItemType" Relationship="ClothingDBModel.ItemTypeItem" FromRole="Item" ToRole="ItemType" />
+        </EntityType>
+        <EntityType Name="ItemType">
+          <Key>
+            <PropertyRef Name="ItemTypeID" />
+          </Key>
+          <Property Name="TypeName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ItemTypeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="ClothingDBModel.ItemTypeItem" FromRole="ItemType" ToRole="Item" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="SaleID" />
+          </Key>
+          <Property Name="SaleTotal" Type="Double" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="SaleID" Type="Int32" Nullable="false" />
+          <Property Name="ClientID" Type="Int32" Nullable="false" />
+          <Property Name="ShippingAddressID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SaleDetail" Relationship="ClothingDBModel.SaleSaleDetail" FromRole="Sale" ToRole="SaleDetail" />
+          <NavigationProperty Name="Client" Relationship="ClothingDBModel.ClientSale" FromRole="Sale" ToRole="Client" />
+          <NavigationProperty Name="ShippingAddress" Relationship="ClothingDBModel.ShippingAddressSale" FromRole="Sale" ToRole="ShippingAddress" />
+        </EntityType>
+        <EntityType Name="SaleDetail">
+          <Key>
+            <PropertyRef Name="SaleDetailID" />
+          </Key>
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="SaleDetailID" Type="Int32" Nullable="false" />
+          <Property Name="SaleID" Type="Int32" Nullable="false" />
+          <Property Name="ItemID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="ClothingDBModel.ItemSaleDetail" FromRole="SaleDetail" ToRole="Item" />
+          <NavigationProperty Name="Sale" Relationship="ClothingDBModel.SaleSaleDetail" FromRole="SaleDetail" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="ShippingAddress">
+          <Key>
+            <PropertyRef Name="ShippingAddressID" />
+          </Key>
+          <Property Name="Street" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Number" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ZipCode" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IsAddressActive" Type="Boolean" />
+          <Property Name="ShippingAddressID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Sale" Relationship="ClothingDBModel.ShippingAddressSale" FromRole="ShippingAddress" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UsernameID" />
+          </Key>
+          <Property Name="Password" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Role" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="UsernameID" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <Association Name="ClientTypeClient">
+          <End Type="ClothingDBModel.ClientType" Role="ClientType" Multiplicity="1" />
+          <End Type="ClothingDBModel.Client" Role="Client" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClientType">
+              <PropertyRef Name="ClientTypeID" />
+            </Principal>
+            <Dependent Role="Client">
+              <PropertyRef Name="ClientTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ItemSaleDetail">
+          <End Type="ClothingDBModel.Item" Role="Item" Multiplicity="1" />
+          <End Type="ClothingDBModel.SaleDetail" Role="SaleDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ItemID" />
+            </Principal>
+            <Dependent Role="SaleDetail">
+              <PropertyRef Name="ItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SaleSaleDetail">
+          <End Type="ClothingDBModel.Sale" Role="Sale" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ClothingDBModel.SaleDetail" Role="SaleDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sale">
+              <PropertyRef Name="SaleID" />
+            </Principal>
+            <Dependent Role="SaleDetail">
+              <PropertyRef Name="SaleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ClientSale">
+          <End Type="ClothingDBModel.Client" Role="Client" Multiplicity="1" />
+          <End Type="ClothingDBModel.Sale" Role="Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Client">
+              <PropertyRef Name="ClientID" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="ClientID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ShippingAddressSale">
+          <End Type="ClothingDBModel.ShippingAddress" Role="ShippingAddress" Multiplicity="1" />
+          <End Type="ClothingDBModel.Sale" Role="Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShippingAddress">
+              <PropertyRef Name="ShippingAddressID" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="ShippingAddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ItemCart">
+          <End Type="ClothingDBModel.Item" Role="Item" Multiplicity="1" />
+          <End Type="ClothingDBModel.Cart" Role="Cart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ItemID" />
+            </Principal>
+            <Dependent Role="Cart">
+              <PropertyRef Name="ItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BillingAddressClient">
+          <End Type="ClothingDBModel.BillingAddress" Role="BillingAddress" Multiplicity="1" />
+          <End Type="ClothingDBModel.Client" Role="Client" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BillingAddress">
+              <PropertyRef Name="BillingAddressID" />
+            </Principal>
+            <Dependent Role="Client">
+              <PropertyRef Name="BillingAddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ItemTypeItem">
+          <End Type="ClothingDBModel.ItemType" Role="ItemType" Multiplicity="1" />
+          <End Type="ClothingDBModel.Item" Role="Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemType">
+              <PropertyRef Name="ItemTypeID" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="ItemTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ClothingDBModelStoreContainer" CdmEntityContainer="ClothingDBEntities">
+          <EntitySetMapping Name="BillingAddress">
+            <EntityTypeMapping TypeName="ClothingDBModel.BillingAddress">
+              <MappingFragment StoreEntitySet="BillingAddress">
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="IsAddressActive" ColumnName="IsAddressActive" />
+                <ScalarProperty Name="BillingAddressID" ColumnName="BillingAddressID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cart">
+            <EntityTypeMapping TypeName="ClothingDBModel.Cart">
+              <MappingFragment StoreEntitySet="Cart">
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+                <ScalarProperty Name="CartID" ColumnName="CartID" />
+                <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Client">
+            <EntityTypeMapping TypeName="ClothingDBModel.Client">
+              <MappingFragment StoreEntitySet="Client">
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="RFC" ColumnName="RFC" />
+                <ScalarProperty Name="IsClientActive" ColumnName="IsClientActive" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+                <ScalarProperty Name="BillingAddressID" ColumnName="BillingAddressID" />
+                <ScalarProperty Name="ClientTypeID" ColumnName="ClientTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClientType">
+            <EntityTypeMapping TypeName="ClothingDBModel.ClientType">
+              <MappingFragment StoreEntitySet="ClientType">
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ClientTypeID" ColumnName="ClientTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Item">
+            <EntityTypeMapping TypeName="ClothingDBModel.Item">
+              <MappingFragment StoreEntitySet="Item">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="IsItemActive" ColumnName="IsItemActive" />
+                <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ItemType">
+            <EntityTypeMapping TypeName="ClothingDBModel.ItemType">
+              <MappingFragment StoreEntitySet="ItemType">
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ItemTypeID" ColumnName="ItemTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sale">
+            <EntityTypeMapping TypeName="ClothingDBModel.Sale">
+              <MappingFragment StoreEntitySet="Sale">
+                <ScalarProperty Name="SaleTotal" ColumnName="SaleTotal" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+                <ScalarProperty Name="ShippingAddressID" ColumnName="ShippingAddressID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SaleDetail">
+            <EntityTypeMapping TypeName="ClothingDBModel.SaleDetail">
+              <MappingFragment StoreEntitySet="SaleDetail">
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="SaleDetailID" ColumnName="SaleDetailID" />
+                <ScalarProperty Name="SaleID" ColumnName="SaleID" />
+                <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShippingAddress">
+            <EntityTypeMapping TypeName="ClothingDBModel.ShippingAddress">
+              <MappingFragment StoreEntitySet="ShippingAddress">
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="IsAddressActive" ColumnName="IsAddressActive" />
+                <ScalarProperty Name="ShippingAddressID" ColumnName="ShippingAddressID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="ClothingDBModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="UsernameID" ColumnName="UsernameID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams />
+  </Designer>
+</edmx:Edmx>

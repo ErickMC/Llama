@@ -1,0 +1,1817 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Udem.LlamaClothingCo.Entities.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.Address</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.#ctor(Udem.LlamaClothingCo.Entities.Address)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressIdGet">
+            <summary>Sets the shim of Address.get_AddressId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressIdSetInt32">
+            <summary>Sets the shim of Address.set_AddressId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressTypeGet">
+            <summary>Sets the shim of Address.get_AddressType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressTypeIdGet">
+            <summary>Sets the shim of Address.get_AddressTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressTypeIdSetInt32">
+            <summary>Sets the shim of Address.set_AddressTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressTypeReferenceGet">
+            <summary>Sets the shim of Address.get_AddressTypeReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressTypeReferenceSetEntityReferenceOfAddressType">
+            <summary>Sets the shim of Address.set_AddressTypeReference(EntityReference`1&lt;AddressType&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AddressTypeSetAddressType">
+            <summary>Sets the shim of Address.set_AddressType(AddressType value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.CityGet">
+            <summary>Sets the shim of Address.get_City()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.CitySetString">
+            <summary>Sets the shim of Address.set_City(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.Constructor">
+            <summary>Sets the shim of Address.Address()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.CreateAddressInt32StringInt32StringStringInt32Int32Boolean">
+            <summary>Sets the shim of Address.CreateAddress(Int32 addressId, String street, Int32 number, String city, String state, Int32 zipCode, Int32 addressTypeId, Boolean isAddressActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.IsAddressActiveGet">
+            <summary>Sets the shim of Address.get_IsAddressActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.IsAddressActiveSetBoolean">
+            <summary>Sets the shim of Address.set_IsAddressActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.NumberGet">
+            <summary>Sets the shim of Address.get_Number()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.NumberSetInt32">
+            <summary>Sets the shim of Address.set_Number(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.StateGet">
+            <summary>Sets the shim of Address.get_State()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.StateSetString">
+            <summary>Sets the shim of Address.set_State(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.StreetGet">
+            <summary>Sets the shim of Address.get_Street()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.StreetSetString">
+            <summary>Sets the shim of Address.set_Street(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.ZipCodeGet">
+            <summary>Sets the shim of Address.get_ZipCode()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.ZipCodeSetInt32">
+            <summary>Sets the shim of Address.set_ZipCode(Int32 value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressIdGet">
+            <summary>Sets the shim of Address.get_AddressId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressIdSetInt32">
+            <summary>Sets the shim of Address.set_AddressId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressTypeGet">
+            <summary>Sets the shim of Address.get_AddressType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressTypeIdGet">
+            <summary>Sets the shim of Address.get_AddressTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressTypeIdSetInt32">
+            <summary>Sets the shim of Address.set_AddressTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressTypeReferenceGet">
+            <summary>Sets the shim of Address.get_AddressTypeReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressTypeReferenceSetEntityReferenceOfAddressType">
+            <summary>Sets the shim of Address.set_AddressTypeReference(EntityReference`1&lt;AddressType&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.AddressTypeSetAddressType">
+            <summary>Sets the shim of Address.set_AddressType(AddressType value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.CityGet">
+            <summary>Sets the shim of Address.get_City()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.CitySetString">
+            <summary>Sets the shim of Address.set_City(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.IsAddressActiveGet">
+            <summary>Sets the shim of Address.get_IsAddressActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.IsAddressActiveSetBoolean">
+            <summary>Sets the shim of Address.set_IsAddressActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.NumberGet">
+            <summary>Sets the shim of Address.get_Number()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.NumberSetInt32">
+            <summary>Sets the shim of Address.set_Number(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.StateGet">
+            <summary>Sets the shim of Address.get_State()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.StateSetString">
+            <summary>Sets the shim of Address.set_State(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.StreetGet">
+            <summary>Sets the shim of Address.get_Street()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.StreetSetString">
+            <summary>Sets the shim of Address.set_Street(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.ZipCodeGet">
+            <summary>Sets the shim of Address.get_ZipCode()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddress.AllInstances.ZipCodeSetInt32">
+            <summary>Sets the shim of Address.set_ZipCode(Int32 value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.AddressType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.#ctor(Udem.LlamaClothingCo.Entities.AddressType)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AddressTypeIdGet">
+            <summary>Sets the shim of AddressType.get_AddressTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AddressTypeIdSetInt32">
+            <summary>Sets the shim of AddressType.set_AddressTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AddressesGet">
+            <summary>Sets the shim of AddressType.get_Addresses()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AddressesSetEntityCollectionOfAddress">
+            <summary>Sets the shim of AddressType.set_Addresses(EntityCollection`1&lt;Address&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.Constructor">
+            <summary>Sets the shim of AddressType.AddressType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.CreateAddressTypeInt32StringStringBoolean">
+            <summary>Sets the shim of AddressType.CreateAddressType(Int32 addressTypeId, String typeName, String description, Boolean isAddressTypeActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.DescriptionGet">
+            <summary>Sets the shim of AddressType.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.DescriptionSetString">
+            <summary>Sets the shim of AddressType.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.IsAddressTypeActiveGet">
+            <summary>Sets the shim of AddressType.get_IsAddressTypeActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.IsAddressTypeActiveSetBoolean">
+            <summary>Sets the shim of AddressType.set_IsAddressTypeActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.TypeNameGet">
+            <summary>Sets the shim of AddressType.get_TypeName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.TypeNameSetString">
+            <summary>Sets the shim of AddressType.set_TypeName(String value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.AddressTypeIdGet">
+            <summary>Sets the shim of AddressType.get_AddressTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.AddressTypeIdSetInt32">
+            <summary>Sets the shim of AddressType.set_AddressTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.AddressesGet">
+            <summary>Sets the shim of AddressType.get_Addresses()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.AddressesSetEntityCollectionOfAddress">
+            <summary>Sets the shim of AddressType.set_Addresses(EntityCollection`1&lt;Address&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.DescriptionGet">
+            <summary>Sets the shim of AddressType.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of AddressType.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.IsAddressTypeActiveGet">
+            <summary>Sets the shim of AddressType.get_IsAddressTypeActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.IsAddressTypeActiveSetBoolean">
+            <summary>Sets the shim of AddressType.set_IsAddressTypeActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.TypeNameGet">
+            <summary>Sets the shim of AddressType.get_TypeName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimAddressType.AllInstances.TypeNameSetString">
+            <summary>Sets the shim of AddressType.set_TypeName(String value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.BillingAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.#ctor(Udem.LlamaClothingCo.Entities.BillingAddress)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.ClientsGet">
+            <summary>Sets the shim of BillingAddress.get_Clients()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.ClientsSetEntityCollectionOfClient">
+            <summary>Sets the shim of BillingAddress.set_Clients(EntityCollection`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.Constructor">
+            <summary>Sets the shim of BillingAddress.BillingAddress()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.CreateBillingAddressInt32StringInt32StringStringInt32Int32Boolean">
+            <summary>Sets the shim of BillingAddress.CreateBillingAddress(Int32 addressId, String street, Int32 number, String city, String state, Int32 zipCode, Int32 addressTypeId, Boolean isAddressActive)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.AllInstances.ClientsGet">
+            <summary>Sets the shim of BillingAddress.get_Clients()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimBillingAddress.AllInstances.ClientsSetEntityCollectionOfClient">
+            <summary>Sets the shim of BillingAddress.set_Clients(EntityCollection`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimClient">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.Client</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.#ctor(Udem.LlamaClothingCo.Entities.Client)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BillingAddressGet">
+            <summary>Sets the shim of Client.get_BillingAddress()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BillingAddressIDGet">
+            <summary>Sets the shim of Client.get_BillingAddressID()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BillingAddressIDSetInt32">
+            <summary>Sets the shim of Client.set_BillingAddressID(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BillingAddressReferenceGet">
+            <summary>Sets the shim of Client.get_BillingAddressReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BillingAddressReferenceSetEntityReferenceOfBillingAddress">
+            <summary>Sets the shim of Client.set_BillingAddressReference(EntityReference`1&lt;BillingAddress&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.BillingAddressSetBillingAddress">
+            <summary>Sets the shim of Client.set_BillingAddress(BillingAddress value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientIdGet">
+            <summary>Sets the shim of Client.get_ClientId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientIdSetInt32">
+            <summary>Sets the shim of Client.set_ClientId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientTypeGet">
+            <summary>Sets the shim of Client.get_ClientType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientTypeIdGet">
+            <summary>Sets the shim of Client.get_ClientTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientTypeIdSetInt32">
+            <summary>Sets the shim of Client.set_ClientTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientTypeReferenceGet">
+            <summary>Sets the shim of Client.get_ClientTypeReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientTypeReferenceSetEntityReferenceOfClientType">
+            <summary>Sets the shim of Client.set_ClientTypeReference(EntityReference`1&lt;ClientType&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.ClientTypeSetClientType">
+            <summary>Sets the shim of Client.set_ClientType(ClientType value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.Constructor">
+            <summary>Sets the shim of Client.Client()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.CreateClientInt32StringStringStringInt32Int32Boolean">
+            <summary>Sets the shim of Client.CreateClient(Int32 clientId, String firstName, String lastName, String rFC, Int32 billingAddressID, Int32 clientTypeId, Boolean isClientActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.FirstNameGet">
+            <summary>Sets the shim of Client.get_FirstName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.FirstNameSetString">
+            <summary>Sets the shim of Client.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.IsClientActiveGet">
+            <summary>Sets the shim of Client.get_IsClientActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.IsClientActiveSetBoolean">
+            <summary>Sets the shim of Client.set_IsClientActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.LastNameGet">
+            <summary>Sets the shim of Client.get_LastName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.LastNameSetString">
+            <summary>Sets the shim of Client.set_LastName(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.RFCGet">
+            <summary>Sets the shim of Client.get_RFC()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.RFCSetString">
+            <summary>Sets the shim of Client.set_RFC(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.SalesGet">
+            <summary>Sets the shim of Client.get_Sales()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.SalesSetEntityCollectionOfSale">
+            <summary>Sets the shim of Client.set_Sales(EntityCollection`1&lt;Sale&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.TelephoneNumbersGet">
+            <summary>Sets the shim of Client.get_TelephoneNumbers()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.TelephoneNumbersSetEntityCollectionOfTelephoneNumber">
+            <summary>Sets the shim of Client.set_TelephoneNumbers(EntityCollection`1&lt;TelephoneNumber&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.BillingAddressGet">
+            <summary>Sets the shim of Client.get_BillingAddress()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.BillingAddressIDGet">
+            <summary>Sets the shim of Client.get_BillingAddressID()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.BillingAddressIDSetInt32">
+            <summary>Sets the shim of Client.set_BillingAddressID(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.BillingAddressReferenceGet">
+            <summary>Sets the shim of Client.get_BillingAddressReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.BillingAddressReferenceSetEntityReferenceOfBillingAddress">
+            <summary>Sets the shim of Client.set_BillingAddressReference(EntityReference`1&lt;BillingAddress&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.BillingAddressSetBillingAddress">
+            <summary>Sets the shim of Client.set_BillingAddress(BillingAddress value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientIdGet">
+            <summary>Sets the shim of Client.get_ClientId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientIdSetInt32">
+            <summary>Sets the shim of Client.set_ClientId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientTypeGet">
+            <summary>Sets the shim of Client.get_ClientType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientTypeIdGet">
+            <summary>Sets the shim of Client.get_ClientTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientTypeIdSetInt32">
+            <summary>Sets the shim of Client.set_ClientTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientTypeReferenceGet">
+            <summary>Sets the shim of Client.get_ClientTypeReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientTypeReferenceSetEntityReferenceOfClientType">
+            <summary>Sets the shim of Client.set_ClientTypeReference(EntityReference`1&lt;ClientType&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.ClientTypeSetClientType">
+            <summary>Sets the shim of Client.set_ClientType(ClientType value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.FirstNameGet">
+            <summary>Sets the shim of Client.get_FirstName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.FirstNameSetString">
+            <summary>Sets the shim of Client.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.IsClientActiveGet">
+            <summary>Sets the shim of Client.get_IsClientActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.IsClientActiveSetBoolean">
+            <summary>Sets the shim of Client.set_IsClientActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.LastNameGet">
+            <summary>Sets the shim of Client.get_LastName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.LastNameSetString">
+            <summary>Sets the shim of Client.set_LastName(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.RFCGet">
+            <summary>Sets the shim of Client.get_RFC()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.RFCSetString">
+            <summary>Sets the shim of Client.set_RFC(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.SalesGet">
+            <summary>Sets the shim of Client.get_Sales()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.SalesSetEntityCollectionOfSale">
+            <summary>Sets the shim of Client.set_Sales(EntityCollection`1&lt;Sale&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.TelephoneNumbersGet">
+            <summary>Sets the shim of Client.get_TelephoneNumbers()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClient.AllInstances.TelephoneNumbersSetEntityCollectionOfTelephoneNumber">
+            <summary>Sets the shim of Client.set_TelephoneNumbers(EntityCollection`1&lt;TelephoneNumber&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.ClientType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.#ctor(Udem.LlamaClothingCo.Entities.ClientType)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.ClientTypeIdGet">
+            <summary>Sets the shim of ClientType.get_ClientTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.ClientTypeIdSetInt32">
+            <summary>Sets the shim of ClientType.set_ClientTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.ClientsGet">
+            <summary>Sets the shim of ClientType.get_Clients()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.ClientsSetEntityCollectionOfClient">
+            <summary>Sets the shim of ClientType.set_Clients(EntityCollection`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.Constructor">
+            <summary>Sets the shim of ClientType.ClientType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.CreateClientTypeInt32StringStringBoolean">
+            <summary>Sets the shim of ClientType.CreateClientType(Int32 clientTypeId, String typeName, String description, Boolean isClientTypeActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.DescriptionGet">
+            <summary>Sets the shim of ClientType.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.DescriptionSetString">
+            <summary>Sets the shim of ClientType.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.IsClientTypeActiveGet">
+            <summary>Sets the shim of ClientType.get_IsClientTypeActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.IsClientTypeActiveSetBoolean">
+            <summary>Sets the shim of ClientType.set_IsClientTypeActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.TypeNameGet">
+            <summary>Sets the shim of ClientType.get_TypeName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.TypeNameSetString">
+            <summary>Sets the shim of ClientType.set_TypeName(String value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.ClientTypeIdGet">
+            <summary>Sets the shim of ClientType.get_ClientTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.ClientTypeIdSetInt32">
+            <summary>Sets the shim of ClientType.set_ClientTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.ClientsGet">
+            <summary>Sets the shim of ClientType.get_Clients()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.ClientsSetEntityCollectionOfClient">
+            <summary>Sets the shim of ClientType.set_Clients(EntityCollection`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.DescriptionGet">
+            <summary>Sets the shim of ClientType.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of ClientType.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.IsClientTypeActiveGet">
+            <summary>Sets the shim of ClientType.get_IsClientTypeActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.IsClientTypeActiveSetBoolean">
+            <summary>Sets the shim of ClientType.set_IsClientTypeActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.TypeNameGet">
+            <summary>Sets the shim of ClientType.get_TypeName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimClientType.AllInstances.TypeNameSetString">
+            <summary>Sets the shim of ClientType.set_TypeName(String value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimItem">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.Item</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.#ctor(Udem.LlamaClothingCo.Entities.Item)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.Constructor">
+            <summary>Sets the shim of Item.Item()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.CostGet">
+            <summary>Sets the shim of Item.get_Cost()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.CostSetDecimal">
+            <summary>Sets the shim of Item.set_Cost(Decimal value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.CreateItemInt32StringStringDecimalInt32Boolean">
+            <summary>Sets the shim of Item.CreateItem(Int32 itemId, String name, String description, Decimal cost, Int32 itemTypeId, Boolean isItemActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.DescriptionGet">
+            <summary>Sets the shim of Item.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.DescriptionSetString">
+            <summary>Sets the shim of Item.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.IsItemActiveGet">
+            <summary>Sets the shim of Item.get_IsItemActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.IsItemActiveSetBoolean">
+            <summary>Sets the shim of Item.set_IsItemActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemIdGet">
+            <summary>Sets the shim of Item.get_ItemId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemIdSetInt32">
+            <summary>Sets the shim of Item.set_ItemId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemTypeGet">
+            <summary>Sets the shim of Item.get_ItemType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemTypeIdGet">
+            <summary>Sets the shim of Item.get_ItemTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemTypeIdSetInt32">
+            <summary>Sets the shim of Item.set_ItemTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemTypeReferenceGet">
+            <summary>Sets the shim of Item.get_ItemTypeReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemTypeReferenceSetEntityReferenceOfItemType">
+            <summary>Sets the shim of Item.set_ItemTypeReference(EntityReference`1&lt;ItemType&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.ItemTypeSetItemType">
+            <summary>Sets the shim of Item.set_ItemType(ItemType value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.NameGet">
+            <summary>Sets the shim of Item.get_Name()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.NameSetString">
+            <summary>Sets the shim of Item.set_Name(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.SaleDetailsGet">
+            <summary>Sets the shim of Item.get_SaleDetails()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.SaleDetailsSetEntityCollectionOfSaleDetail">
+            <summary>Sets the shim of Item.set_SaleDetails(EntityCollection`1&lt;SaleDetail&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.CostGet">
+            <summary>Sets the shim of Item.get_Cost()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.CostSetDecimal">
+            <summary>Sets the shim of Item.set_Cost(Decimal value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.DescriptionGet">
+            <summary>Sets the shim of Item.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of Item.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.IsItemActiveGet">
+            <summary>Sets the shim of Item.get_IsItemActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.IsItemActiveSetBoolean">
+            <summary>Sets the shim of Item.set_IsItemActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemIdGet">
+            <summary>Sets the shim of Item.get_ItemId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemIdSetInt32">
+            <summary>Sets the shim of Item.set_ItemId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemTypeGet">
+            <summary>Sets the shim of Item.get_ItemType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemTypeIdGet">
+            <summary>Sets the shim of Item.get_ItemTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemTypeIdSetInt32">
+            <summary>Sets the shim of Item.set_ItemTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemTypeReferenceGet">
+            <summary>Sets the shim of Item.get_ItemTypeReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemTypeReferenceSetEntityReferenceOfItemType">
+            <summary>Sets the shim of Item.set_ItemTypeReference(EntityReference`1&lt;ItemType&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.ItemTypeSetItemType">
+            <summary>Sets the shim of Item.set_ItemType(ItemType value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.NameGet">
+            <summary>Sets the shim of Item.get_Name()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.NameSetString">
+            <summary>Sets the shim of Item.set_Name(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.SaleDetailsGet">
+            <summary>Sets the shim of Item.get_SaleDetails()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItem.AllInstances.SaleDetailsSetEntityCollectionOfSaleDetail">
+            <summary>Sets the shim of Item.set_SaleDetails(EntityCollection`1&lt;SaleDetail&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.ItemType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.#ctor(Udem.LlamaClothingCo.Entities.ItemType)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.Constructor">
+            <summary>Sets the shim of ItemType.ItemType()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.CreateItemTypeInt32StringStringBoolean">
+            <summary>Sets the shim of ItemType.CreateItemType(Int32 itemTypeId, String typeName, String description, Boolean isItemTypeActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.DescriptionGet">
+            <summary>Sets the shim of ItemType.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.DescriptionSetString">
+            <summary>Sets the shim of ItemType.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.IsItemTypeActiveGet">
+            <summary>Sets the shim of ItemType.get_IsItemTypeActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.IsItemTypeActiveSetBoolean">
+            <summary>Sets the shim of ItemType.set_IsItemTypeActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.ItemTypeIdGet">
+            <summary>Sets the shim of ItemType.get_ItemTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.ItemTypeIdSetInt32">
+            <summary>Sets the shim of ItemType.set_ItemTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.ItemsGet">
+            <summary>Sets the shim of ItemType.get_Items()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.ItemsSetEntityCollectionOfItem">
+            <summary>Sets the shim of ItemType.set_Items(EntityCollection`1&lt;Item&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.TypeNameGet">
+            <summary>Sets the shim of ItemType.get_TypeName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.TypeNameSetString">
+            <summary>Sets the shim of ItemType.set_TypeName(String value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.DescriptionGet">
+            <summary>Sets the shim of ItemType.get_Description()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of ItemType.set_Description(String value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.IsItemTypeActiveGet">
+            <summary>Sets the shim of ItemType.get_IsItemTypeActive()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.IsItemTypeActiveSetBoolean">
+            <summary>Sets the shim of ItemType.set_IsItemTypeActive(Boolean value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.ItemTypeIdGet">
+            <summary>Sets the shim of ItemType.get_ItemTypeId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.ItemTypeIdSetInt32">
+            <summary>Sets the shim of ItemType.set_ItemTypeId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.ItemsGet">
+            <summary>Sets the shim of ItemType.get_Items()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.ItemsSetEntityCollectionOfItem">
+            <summary>Sets the shim of ItemType.set_Items(EntityCollection`1&lt;Item&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.TypeNameGet">
+            <summary>Sets the shim of ItemType.get_TypeName()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimItemType.AllInstances.TypeNameSetString">
+            <summary>Sets the shim of ItemType.set_TypeName(String value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimSale">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.Sale</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.#ctor(Udem.LlamaClothingCo.Entities.Sale)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ClientGet">
+            <summary>Sets the shim of Sale.get_Client()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ClientIdGet">
+            <summary>Sets the shim of Sale.get_ClientId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ClientIdSetInt32">
+            <summary>Sets the shim of Sale.set_ClientId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ClientReferenceGet">
+            <summary>Sets the shim of Sale.get_ClientReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ClientReferenceSetEntityReferenceOfClient">
+            <summary>Sets the shim of Sale.set_ClientReference(EntityReference`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ClientSetClient">
+            <summary>Sets the shim of Sale.set_Client(Client value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.Constructor">
+            <summary>Sets the shim of Sale.Sale()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.CreateSaleInt32Int32DecimalDateTimeInt32">
+            <summary>Sets the shim of Sale.CreateSale(Int32 saleId, Int32 clientId, Decimal saleTotal, DateTime date, Int32 shippingAddress)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.DateGet">
+            <summary>Sets the shim of Sale.get_Date()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.DateSetDateTime">
+            <summary>Sets the shim of Sale.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.SaleDetailsGet">
+            <summary>Sets the shim of Sale.get_SaleDetails()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.SaleDetailsSetEntityCollectionOfSaleDetail">
+            <summary>Sets the shim of Sale.set_SaleDetails(EntityCollection`1&lt;SaleDetail&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.SaleIdGet">
+            <summary>Sets the shim of Sale.get_SaleId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.SaleIdSetInt32">
+            <summary>Sets the shim of Sale.set_SaleId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.SaleTotalGet">
+            <summary>Sets the shim of Sale.get_SaleTotal()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.SaleTotalSetDecimal">
+            <summary>Sets the shim of Sale.set_SaleTotal(Decimal value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ShippingAddressGet">
+            <summary>Sets the shim of Sale.get_ShippingAddress()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ShippingAddressSetInt32">
+            <summary>Sets the shim of Sale.set_ShippingAddress(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ShippingAddressesGet">
+            <summary>Sets the shim of Sale.get_ShippingAddresses()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ShippingAddressesReferenceGet">
+            <summary>Sets the shim of Sale.get_ShippingAddressesReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ShippingAddressesReferenceSetEntityReferenceOfShippingAddress">
+            <summary>Sets the shim of Sale.set_ShippingAddressesReference(EntityReference`1&lt;ShippingAddress&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.ShippingAddressesSetShippingAddress">
+            <summary>Sets the shim of Sale.set_ShippingAddresses(ShippingAddress value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ClientGet">
+            <summary>Sets the shim of Sale.get_Client()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ClientIdGet">
+            <summary>Sets the shim of Sale.get_ClientId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ClientIdSetInt32">
+            <summary>Sets the shim of Sale.set_ClientId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ClientReferenceGet">
+            <summary>Sets the shim of Sale.get_ClientReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ClientReferenceSetEntityReferenceOfClient">
+            <summary>Sets the shim of Sale.set_ClientReference(EntityReference`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ClientSetClient">
+            <summary>Sets the shim of Sale.set_Client(Client value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.DateGet">
+            <summary>Sets the shim of Sale.get_Date()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.DateSetDateTime">
+            <summary>Sets the shim of Sale.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.SaleDetailsGet">
+            <summary>Sets the shim of Sale.get_SaleDetails()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.SaleDetailsSetEntityCollectionOfSaleDetail">
+            <summary>Sets the shim of Sale.set_SaleDetails(EntityCollection`1&lt;SaleDetail&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.SaleIdGet">
+            <summary>Sets the shim of Sale.get_SaleId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.SaleIdSetInt32">
+            <summary>Sets the shim of Sale.set_SaleId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.SaleTotalGet">
+            <summary>Sets the shim of Sale.get_SaleTotal()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.SaleTotalSetDecimal">
+            <summary>Sets the shim of Sale.set_SaleTotal(Decimal value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ShippingAddressGet">
+            <summary>Sets the shim of Sale.get_ShippingAddress()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ShippingAddressSetInt32">
+            <summary>Sets the shim of Sale.set_ShippingAddress(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ShippingAddressesGet">
+            <summary>Sets the shim of Sale.get_ShippingAddresses()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ShippingAddressesReferenceGet">
+            <summary>Sets the shim of Sale.get_ShippingAddressesReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ShippingAddressesReferenceSetEntityReferenceOfShippingAddress">
+            <summary>Sets the shim of Sale.set_ShippingAddressesReference(EntityReference`1&lt;ShippingAddress&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSale.AllInstances.ShippingAddressesSetShippingAddress">
+            <summary>Sets the shim of Sale.set_ShippingAddresses(ShippingAddress value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.SaleDetail</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.#ctor(Udem.LlamaClothingCo.Entities.SaleDetail)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.Constructor">
+            <summary>Sets the shim of SaleDetail.SaleDetail()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.CreateSaleDetailInt32Int32Int32">
+            <summary>Sets the shim of SaleDetail.CreateSaleDetail(Int32 saleId, Int32 itemId, Int32 quantity)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.ItemGet">
+            <summary>Sets the shim of SaleDetail.get_Item()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.ItemIdGet">
+            <summary>Sets the shim of SaleDetail.get_ItemId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.ItemIdSetInt32">
+            <summary>Sets the shim of SaleDetail.set_ItemId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.ItemReferenceGet">
+            <summary>Sets the shim of SaleDetail.get_ItemReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.ItemReferenceSetEntityReferenceOfItem">
+            <summary>Sets the shim of SaleDetail.set_ItemReference(EntityReference`1&lt;Item&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.ItemSetItem">
+            <summary>Sets the shim of SaleDetail.set_Item(Item value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.QuantityGet">
+            <summary>Sets the shim of SaleDetail.get_Quantity()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.QuantitySetInt32">
+            <summary>Sets the shim of SaleDetail.set_Quantity(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.SaleGet">
+            <summary>Sets the shim of SaleDetail.get_Sale()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.SaleIdGet">
+            <summary>Sets the shim of SaleDetail.get_SaleId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.SaleIdSetInt32">
+            <summary>Sets the shim of SaleDetail.set_SaleId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.SaleReferenceGet">
+            <summary>Sets the shim of SaleDetail.get_SaleReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.SaleReferenceSetEntityReferenceOfSale">
+            <summary>Sets the shim of SaleDetail.set_SaleReference(EntityReference`1&lt;Sale&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.SaleSetSale">
+            <summary>Sets the shim of SaleDetail.set_Sale(Sale value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.ItemGet">
+            <summary>Sets the shim of SaleDetail.get_Item()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.ItemIdGet">
+            <summary>Sets the shim of SaleDetail.get_ItemId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.ItemIdSetInt32">
+            <summary>Sets the shim of SaleDetail.set_ItemId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.ItemReferenceGet">
+            <summary>Sets the shim of SaleDetail.get_ItemReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.ItemReferenceSetEntityReferenceOfItem">
+            <summary>Sets the shim of SaleDetail.set_ItemReference(EntityReference`1&lt;Item&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.ItemSetItem">
+            <summary>Sets the shim of SaleDetail.set_Item(Item value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.QuantityGet">
+            <summary>Sets the shim of SaleDetail.get_Quantity()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.QuantitySetInt32">
+            <summary>Sets the shim of SaleDetail.set_Quantity(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.SaleGet">
+            <summary>Sets the shim of SaleDetail.get_Sale()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.SaleIdGet">
+            <summary>Sets the shim of SaleDetail.get_SaleId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.SaleIdSetInt32">
+            <summary>Sets the shim of SaleDetail.set_SaleId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.SaleReferenceGet">
+            <summary>Sets the shim of SaleDetail.get_SaleReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.SaleReferenceSetEntityReferenceOfSale">
+            <summary>Sets the shim of SaleDetail.set_SaleReference(EntityReference`1&lt;Sale&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimSaleDetail.AllInstances.SaleSetSale">
+            <summary>Sets the shim of SaleDetail.set_Sale(Sale value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.ShippingAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.#ctor(Udem.LlamaClothingCo.Entities.ShippingAddress)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.Constructor">
+            <summary>Sets the shim of ShippingAddress.ShippingAddress()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.CreateShippingAddressInt32StringInt32StringStringInt32Int32Boolean">
+            <summary>Sets the shim of ShippingAddress.CreateShippingAddress(Int32 addressId, String street, Int32 number, String city, String state, Int32 zipCode, Int32 addressTypeId, Boolean isAddressActive)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.SalesGet">
+            <summary>Sets the shim of ShippingAddress.get_Sales()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.SalesSetEntityCollectionOfSale">
+            <summary>Sets the shim of ShippingAddress.set_Sales(EntityCollection`1&lt;Sale&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.AllInstances.SalesGet">
+            <summary>Sets the shim of ShippingAddress.get_Sales()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimShippingAddress.AllInstances.SalesSetEntityCollectionOfSale">
+            <summary>Sets the shim of ShippingAddress.set_Sales(EntityCollection`1&lt;Sale&gt; value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.TelephoneNumber</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.#ctor(Udem.LlamaClothingCo.Entities.TelephoneNumber)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Bind(System.ComponentModel.INotifyPropertyChanging)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Bind(System.Data.Objects.DataClasses.IEntityWithChangeTracker)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Bind(System.Data.Objects.DataClasses.IEntityWithKey)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Bind(System.Data.Objects.DataClasses.IEntityWithRelationships)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.ClientGet">
+            <summary>Sets the shim of TelephoneNumber.get_Client()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.ClientIdGet">
+            <summary>Sets the shim of TelephoneNumber.get_ClientId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.ClientIdSetInt32">
+            <summary>Sets the shim of TelephoneNumber.set_ClientId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.ClientReferenceGet">
+            <summary>Sets the shim of TelephoneNumber.get_ClientReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.ClientReferenceSetEntityReferenceOfClient">
+            <summary>Sets the shim of TelephoneNumber.set_ClientReference(EntityReference`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.ClientSetClient">
+            <summary>Sets the shim of TelephoneNumber.set_Client(Client value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.Constructor">
+            <summary>Sets the shim of TelephoneNumber.TelephoneNumber()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.CreateTelephoneNumberInt32Int32">
+            <summary>Sets the shim of TelephoneNumber.CreateTelephoneNumber(Int32 telephoneId, Int32 clientId)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.TelephoneIdGet">
+            <summary>Sets the shim of TelephoneNumber.get_TelephoneId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.TelephoneIdSetInt32">
+            <summary>Sets the shim of TelephoneNumber.set_TelephoneId(Int32 value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.ClientGet">
+            <summary>Sets the shim of TelephoneNumber.get_Client()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.ClientIdGet">
+            <summary>Sets the shim of TelephoneNumber.get_ClientId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.ClientIdSetInt32">
+            <summary>Sets the shim of TelephoneNumber.set_ClientId(Int32 value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.ClientReferenceGet">
+            <summary>Sets the shim of TelephoneNumber.get_ClientReference()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.ClientReferenceSetEntityReferenceOfClient">
+            <summary>Sets the shim of TelephoneNumber.set_ClientReference(EntityReference`1&lt;Client&gt; value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.ClientSetClient">
+            <summary>Sets the shim of TelephoneNumber.set_Client(Client value)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.TelephoneIdGet">
+            <summary>Sets the shim of TelephoneNumber.get_TelephoneId()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTelephoneNumber.AllInstances.TelephoneIdSetInt32">
+            <summary>Sets the shim of TelephoneNumber.set_TelephoneId(Int32 value)</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext">
+            <summary>Shim type of Udem.LlamaClothingCo.Entities.TestContext</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.#ctor(Udem.LlamaClothingCo.Entities.TestContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToAddressTypesAddressType">
+            <summary>Sets the shim of TestContext.AddToAddressTypes(AddressType addressType)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToAddressesAddress">
+            <summary>Sets the shim of TestContext.AddToAddresses(Address address)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToClientTypesClientType">
+            <summary>Sets the shim of TestContext.AddToClientTypes(ClientType clientType)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToClientsClient">
+            <summary>Sets the shim of TestContext.AddToClients(Client client)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToItemTypesItemType">
+            <summary>Sets the shim of TestContext.AddToItemTypes(ItemType itemType)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToItemsItem">
+            <summary>Sets the shim of TestContext.AddToItems(Item item)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToSaleDetailsSaleDetail">
+            <summary>Sets the shim of TestContext.AddToSaleDetails(SaleDetail saleDetail)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToSalesSale">
+            <summary>Sets the shim of TestContext.AddToSales(Sale sale)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddToTelephoneNumbersTelephoneNumber">
+            <summary>Sets the shim of TestContext.AddToTelephoneNumbers(TelephoneNumber telephoneNumber)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddressTypesGet">
+            <summary>Sets the shim of TestContext.get_AddressTypes()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AddressesGet">
+            <summary>Sets the shim of TestContext.get_Addresses()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.ClientTypesGet">
+            <summary>Sets the shim of TestContext.get_ClientTypes()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.ClientsGet">
+            <summary>Sets the shim of TestContext.get_Clients()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.Constructor">
+            <summary>Sets the shim of TestContext.TestContext()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.ConstructorEntityConnection">
+            <summary>Sets the shim of TestContext.TestContext(EntityConnection connection)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.ConstructorString">
+            <summary>Sets the shim of TestContext.TestContext(String connectionString)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.ItemTypesGet">
+            <summary>Sets the shim of TestContext.get_ItemTypes()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.ItemsGet">
+            <summary>Sets the shim of TestContext.get_Items()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.SaleDetailsGet">
+            <summary>Sets the shim of TestContext.get_SaleDetails()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.SalesGet">
+            <summary>Sets the shim of TestContext.get_Sales()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.TelephoneNumbersGet">
+            <summary>Sets the shim of TestContext.get_TelephoneNumbers()</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToAddressTypesAddressType">
+            <summary>Sets the shim of TestContext.AddToAddressTypes(AddressType addressType)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToAddressesAddress">
+            <summary>Sets the shim of TestContext.AddToAddresses(Address address)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToClientTypesClientType">
+            <summary>Sets the shim of TestContext.AddToClientTypes(ClientType clientType)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToClientsClient">
+            <summary>Sets the shim of TestContext.AddToClients(Client client)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToItemTypesItemType">
+            <summary>Sets the shim of TestContext.AddToItemTypes(ItemType itemType)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToItemsItem">
+            <summary>Sets the shim of TestContext.AddToItems(Item item)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToSaleDetailsSaleDetail">
+            <summary>Sets the shim of TestContext.AddToSaleDetails(SaleDetail saleDetail)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToSalesSale">
+            <summary>Sets the shim of TestContext.AddToSales(Sale sale)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddToTelephoneNumbersTelephoneNumber">
+            <summary>Sets the shim of TestContext.AddToTelephoneNumbers(TelephoneNumber telephoneNumber)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddressTypesGet">
+            <summary>Sets the shim of TestContext.get_AddressTypes()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.AddressesGet">
+            <summary>Sets the shim of TestContext.get_Addresses()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.ClientTypesGet">
+            <summary>Sets the shim of TestContext.get_ClientTypes()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.ClientsGet">
+            <summary>Sets the shim of TestContext.get_Clients()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.ItemTypesGet">
+            <summary>Sets the shim of TestContext.get_ItemTypes()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.ItemsGet">
+            <summary>Sets the shim of TestContext.get_Items()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.SaleDetailsGet">
+            <summary>Sets the shim of TestContext.get_SaleDetails()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.SalesGet">
+            <summary>Sets the shim of TestContext.get_Sales()</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.ShimTestContext.AllInstances.TelephoneNumbersGet">
+            <summary>Sets the shim of TestContext.get_TelephoneNumbers()</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubAddress">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.Address</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.InitializeStub">
+            <summary>Initializes a new instance of type StubAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubAddress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.AddressType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.InitializeStub">
+            <summary>Initializes a new instance of type StubAddressType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubAddressType.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.BillingAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.InitializeStub">
+            <summary>Initializes a new instance of type StubBillingAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubBillingAddress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubClient">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.Client</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClient.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClient.InitializeStub">
+            <summary>Initializes a new instance of type StubClient</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClient.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubClient.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClient.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubClient.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubClient.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubClient.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubClient.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubClientType">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.ClientType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.InitializeStub">
+            <summary>Initializes a new instance of type StubClientType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubClientType.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubItem">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.Item</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItem.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItem.InitializeStub">
+            <summary>Initializes a new instance of type StubItem</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItem.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubItem.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItem.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubItem.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubItem.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubItem.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubItem.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubItemType">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.ItemType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.InitializeStub">
+            <summary>Initializes a new instance of type StubItemType</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubItemType.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubSale">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.Sale</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSale.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSale.InitializeStub">
+            <summary>Initializes a new instance of type StubSale</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSale.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubSale.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSale.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubSale.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubSale.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubSale.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubSale.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.SaleDetail</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.InitializeStub">
+            <summary>Initializes a new instance of type StubSaleDetail</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubSaleDetail.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.ShippingAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.InitializeStub">
+            <summary>Initializes a new instance of type StubShippingAddress</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubShippingAddress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.TelephoneNumber</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.InitializeStub">
+            <summary>Initializes a new instance of type StubTelephoneNumber</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.OnPropertyChanged(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.OnPropertyChangedString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanged(String property)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.OnPropertyChanging(System.String)">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.OnPropertyChangingString">
+            <summary>Sets the stub of StructuralObject.OnPropertyChanging(String property)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubTelephoneNumber.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext">
+            <summary>Stub type of Udem.LlamaClothingCo.Entities.TestContext</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.#ctor(System.Data.EntityClient.EntityConnection)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of ObjectContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.DisposeBoolean">
+            <summary>Sets the stub of ObjectContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.InitializeStub">
+            <summary>Initializes a new instance of type StubTestContext</summary>
+        </member>
+        <member name="M:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.SaveChanges(System.Data.Objects.SaveOptions)">
+            <summary>Sets the stub of ObjectContext.SaveChanges(SaveOptions options)</summary>
+        </member>
+        <member name="F:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.SaveChangesSaveOptions">
+            <summary>Sets the stub of ObjectContext.SaveChanges(SaveOptions options)</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Udem.LlamaClothingCo.Entities.Fakes.StubTestContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\LlamaClothingCo\bin\Debug\LlamaClothingCo.dll.config
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\LlamaClothingCo\bin\Debug\LlamaClothingCo.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\LlamaClothingCo\bin\Debug\LlamaClothingCo.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\LlamaClothingCo\obj\x86\Debug\LlamaClothingCo.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\LlamaClothingCo\obj\x86\Debug\LlamaClothingCo.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\LlamaClothingCo\obj\x86\Debug\LlamaClothingCo.csprojResolveAssemblyReference.cache

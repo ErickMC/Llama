@@ -1,0 +1,53 @@
+﻿@model Udem.LlamaClothingCo.Entities.Client
+
+@{
+    ViewBag.Title = "Delete Client";
+}
+
+<h2>Delete Client</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Client</legend>
+
+    <div class="display-label">FirstName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label">LastName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+
+    <div class="display-label">RFC</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RFC)
+    </div>
+
+    <div class="display-label">IsClientActive</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsClientActive)
+    </div>
+
+   <!-- <div class="display-label">Telephone</div>
+    <div class="display-field">
+        Html.DisplayFor(model => model.Telephone)
+    </div>
+    -->
+    <div class="display-label">BillingAddressID</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BillingAddressID)
+    </div>
+
+    <div class="display-label">ClientTypeID</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ClientTypeId)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

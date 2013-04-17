@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TestContext" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Clients" EntityType="TestModel.Client" />
+    <EntitySet Name="ClientTypes" EntityType="TestModel.ClientType" />
+    <AssociationSet Name="ClientClientType" Association="TestModel.ClientClientType">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="ClientType" EntitySet="ClientTypes" />
+    </AssociationSet>
+    <EntitySet Name="Items" EntityType="TestModel.Item" />
+    <EntitySet Name="ItemTypes" EntityType="TestModel.ItemType" />
+    <AssociationSet Name="ItemItemType" Association="TestModel.ItemItemType">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="ItemType" EntitySet="ItemTypes" />
+    </AssociationSet>
+    <EntitySet Name="Addresses" EntityType="TestModel.Address" />
+    <EntitySet Name="AddressTypes" EntityType="TestModel.AddressType" />
+    <AssociationSet Name="AddressTypeAddress" Association="TestModel.AddressTypeAddress">
+      <End Role="AddressType" EntitySet="AddressTypes" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <EntitySet Name="Sales" EntityType="TestModel.Sale" />
+    <EntitySet Name="SaleDetails" EntityType="TestModel.SaleDetail" />
+    <AssociationSet Name="ItemSaleDetail" Association="TestModel.ItemSaleDetail">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="SaleDetail" EntitySet="SaleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="SaleSaleDetail" Association="TestModel.SaleSaleDetail">
+      <End Role="Sale" EntitySet="Sales" />
+      <End Role="SaleDetail" EntitySet="SaleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="SaleClient" Association="TestModel.SaleClient">
+      <End Role="Sale" EntitySet="Sales" />
+      <End Role="Client" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="ClientBillingAddress" Association="TestModel.ClientBillingAddress">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="ShippingAddressSale" Association="TestModel.ShippingAddressSale">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Sale" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="ShippingAddressClient" Association="TestModel.ShippingAddressClient">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="Client" EntitySet="Clients" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientId" />
+    </Key>
+    <Property Type="Int32" Name="ClientId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="RFC" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="Int32" Name="BillingAddressId" Nullable="false" />
+    <Property Type="Int32" Name="ClientTypeId" Nullable="false" />
+    <NavigationProperty Name="ClientType" Relationship="TestModel.ClientClientType" FromRole="Client" ToRole="ClientType" />
+    <Property Type="Boolean" Name="IsClientActive" Nullable="false" />
+    <NavigationProperty Name="Sales" Relationship="TestModel.SaleClient" FromRole="Client" ToRole="Sale" />
+    <Property Type="String" Name="TelephoneNumber" Nullable="false" />
+    <NavigationProperty Name="BillingAddress" Relationship="TestModel.ClientBillingAddress" FromRole="Client" ToRole="Address" />
+    <Property Type="String" Name="Email" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" />
+    <Property Type="Int32" Name="ShippingAddressId" Nullable="false" />
+    <NavigationProperty Name="ShippingAddress" Relationship="TestModel.ShippingAddressClient" FromRole="Client" ToRole="Address" />
+  </EntityType>
+  <EntityType Name="ClientType">
+    <Key>
+      <PropertyRef Name="ClientTypeId" />
+    </Key>
+    <Property Type="Int32" Name="ClientTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="TypeName" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="Description" Nullable="false" />
+    <NavigationProperty Name="Clients" Relationship="TestModel.ClientClientType" FromRole="ClientType" ToRole="Client" />
+    <Property Type="Boolean" Name="IsClientTypeActive" Nullable="false" />
+  </EntityType>
+  <Association Name="ClientClientType">
+    <End Type="TestModel.Client" Role="Client" Multiplicity="*" />
+    <End Type="TestModel.ClientType" Role="ClientType" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ClientType">
+        <PropertyRef Name="ClientTypeId" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="ClientTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Type="Int32" Name="ItemId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="Decimal" Name="Cost" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="ItemTypeId" Nullable="false" />
+    <NavigationProperty Name="ItemType" Relationship="TestModel.ItemItemType" FromRole="Item" ToRole="ItemType" />
+    <NavigationProperty Name="SaleDetails" Relationship="TestModel.ItemSaleDetail" FromRole="Item" ToRole="SaleDetail" />
+    <Property Type="Boolean" Name="IsItemActive" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ItemType">
+    <Key>
+      <PropertyRef Name="ItemTypeId" />
+    </Key>
+    <Property Type="Int32" Name="ItemTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="TypeName" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Items" Relationship="TestModel.ItemItemType" FromRole="ItemType" ToRole="Item" />
+    <Property Type="Boolean" Name="IsItemTypeActive" Nullable="false" />
+  </EntityType>
+  <Association Name="ItemItemType">
+    <End Type="TestModel.Item" Role="Item" Multiplicity="*" />
+    <End Type="TestModel.ItemType" Role="ItemType" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="ItemType">
+        <PropertyRef Name="ItemTypeId" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="ItemTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressId" />
+    </Key>
+    <Property Type="Int32" Name="AddressId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Street" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="Int32" Name="Number" Nullable="false" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="Int32" Name="ZipCode" Nullable="false" />
+    <Property Type="Int32" Name="AddressTypeId" Nullable="false" />
+    <NavigationProperty Name="AddressType" Relationship="TestModel.AddressTypeAddress" FromRole="Address" ToRole="AddressType" />
+    <Property Type="Boolean" Name="IsAddressActive" Nullable="false" />
+    <NavigationProperty Name="Clients_Billing" Relationship="TestModel.ClientBillingAddress" FromRole="Address" ToRole="Client" />
+    <NavigationProperty Name="Sales" Relationship="TestModel.ShippingAddressSale" FromRole="Address" ToRole="Sale" />
+    <NavigationProperty Name="Clients_Shipping" Relationship="TestModel.ShippingAddressClient" FromRole="Address" ToRole="Client" />
+  </EntityType>
+  <EntityType Name="AddressType">
+    <Key>
+      <PropertyRef Name="AddressTypeId" />
+    </Key>
+    <Property Type="Int32" Name="AddressTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="TypeName" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Addresses" Relationship="TestModel.AddressTypeAddress" FromRole="AddressType" ToRole="Address" />
+    <Property Type="Boolean" Name="IsAddressTypeActive" Nullable="false" />
+  </EntityType>
+  <Association Name="AddressTypeAddress">
+    <End Type="TestModel.AddressType" Role="AddressType" Multiplicity="1" />
+    <End Type="TestModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddressType">
+        <PropertyRef Name="AddressTypeId" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="AddressTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="SaleId" />
+    </Key>
+    <Property Type="Int32" Name="SaleId" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="ClientId" Nullable="false" />
+    <Property Type="Decimal" Name="SaleTotal" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="ShippingAddressId" Nullable="false" />
+    <NavigationProperty Name="SaleDetails" Relationship="TestModel.SaleSaleDetail" FromRole="Sale" ToRole="SaleDetail" />
+    <NavigationProperty Name="Client" Relationship="TestModel.SaleClient" FromRole="Sale" ToRole="Client" />
+    <NavigationProperty Name="ShippingAddress" Relationship="TestModel.ShippingAddressSale" FromRole="Sale" ToRole="Address" />
+  </EntityType>
+  <EntityType Name="SaleDetail">
+    <Key>
+      <PropertyRef Name="SaleId" />
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <NavigationProperty Name="Item" Relationship="TestModel.ItemSaleDetail" FromRole="SaleDetail" ToRole="Item" />
+    <NavigationProperty Name="Sale" Relationship="TestModel.SaleSaleDetail" FromRole="SaleDetail" ToRole="Sale" />
+    <Property Type="Int32" Name="SaleId" Nullable="false" />
+    <Property Type="Int32" Name="ItemId" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+  </EntityType>
+  <Association Name="ItemSaleDetail">
+    <End Type="TestModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="TestModel.SaleDetail" Role="SaleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="SaleDetail">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SaleSaleDetail">
+    <End Type="TestModel.Sale" Role="Sale" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="TestModel.SaleDetail" Role="SaleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="SaleId" />
+      </Principal>
+      <Dependent Role="SaleDetail">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SaleClient">
+    <End Type="TestModel.Sale" Role="Sale" Multiplicity="*" />
+    <End Type="TestModel.Client" Role="Client" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientId" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClientBillingAddress">
+    <End Type="TestModel.Client" Role="Client" Multiplicity="*" />
+    <End Type="TestModel.Address" Role="Address" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="BillingAddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ShippingAddressSale">
+    <End Type="TestModel.Address" Role="Address" Multiplicity="1" />
+    <End Type="TestModel.Sale" Role="Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Sale">
+        <PropertyRef Name="ShippingAddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ShippingAddressClient">
+    <End Type="TestModel.Address" Role="Address" Multiplicity="1" />
+    <End Type="TestModel.Client" Role="Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="AddressId" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="ShippingAddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

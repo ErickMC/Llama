@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8bd22de03e1f4e93aec951e1c9b365eb" Name="Diagrama1" ZoomLevel="83">
+        <EntityTypeShape EntityType="ClothingDBModel.BillingAddress" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.Cart" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.Client" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.ClientType" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.Item" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.ItemType" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.Sale" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.SaleDetail" Width="1.5" PointX="4.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.ShippingAddress" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClothingDBModel.User" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="ClothingDBModel.ClientTypeClient" />
+        <AssociationConnector Association="ClothingDBModel.ItemSaleDetail" />
+        <AssociationConnector Association="ClothingDBModel.SaleSaleDetail" />
+        <AssociationConnector Association="ClothingDBModel.ClientSale" />
+        <AssociationConnector Association="ClothingDBModel.ShippingAddressSale" />
+        <AssociationConnector Association="ClothingDBModel.ItemCart" />
+        <AssociationConnector Association="ClothingDBModel.BillingAddressClient" />
+        <AssociationConnector Association="ClothingDBModel.ItemTypeItem" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

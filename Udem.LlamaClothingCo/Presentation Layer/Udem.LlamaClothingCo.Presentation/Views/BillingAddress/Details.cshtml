@@ -1,0 +1,50 @@
+﻿@model Udem.LlamaClothingCo.Entities.Address
+
+@{
+    ViewBag.Title = "Billing Address Details";
+}
+
+<h2> Billing Address Details</h2>
+
+<fieldset>
+    <legend>BillingAddress</legend>
+
+    <div class="display-label">Street</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Street)
+    </div>
+
+    <div class="display-label">Number</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Number)
+    </div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">State</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.State)
+    </div>
+
+    <div class="display-label">ZipCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ZipCode)
+    </div>
+
+    <div class="display-label">IsAddressActive</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsAddressActive)
+    </div>
+
+    <div class="display-label">AddressTypeId</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AddressTypeId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AddressId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

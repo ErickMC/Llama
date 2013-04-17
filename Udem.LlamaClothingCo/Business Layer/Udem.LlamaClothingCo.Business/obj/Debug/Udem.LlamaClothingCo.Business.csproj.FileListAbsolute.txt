@@ -1,0 +1,19 @@
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Entities.dll
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Managers.dll
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Entities.pdb
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\bin\Debug\Udem.LlamaClothingCo.Managers.pdb
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.dll
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.pdb
+C:\Llama\Udem.LlamaClothingCo\Business Layer\Udem.LlamaClothingCo.Business\obj\Debug\Udem.LlamaClothingCo.Business.csprojResolveAssemblyReference.cache

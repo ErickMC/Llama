@@ -1,0 +1,18 @@
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo\Prueba\obj\x86\Debug\Prueba.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\obj\x86\Debug\Prueba.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Prueba.exe.config
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\obj\x86\Debug\Prueba.Prueba.resources
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\obj\x86\Debug\Prueba.csproj.GenerateResource.Cache
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Prueba.exe
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Prueba.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Udem.LlamaClothingCo.Entities.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Udem.LlamaClothingCo.Managers.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Udem.LlamaClothingCo.Entities.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\Udem.LlamaClothingCo.Managers.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\obj\x86\Debug\Prueba.exe
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\obj\x86\Debug\Prueba.pdb
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\EntityFramework.dll
+C:\Users\Erick\Documents\Sexto Semestre\Desarrollo Multicapas\Proyecto\LlamaClothingCo (V2.0)\Prueba\bin\x86\Debug\EntityFramework.xml
+C:\Llama\Prueba\obj\x86\Debug\Prueba.csprojResolveAssemblyReference.cache
+C:\Llama\Prueba\obj\x86\Debug\Prueba.Prueba.resources
+C:\Llama\Prueba\obj\x86\Debug\Prueba.csproj.GenerateResource.Cache

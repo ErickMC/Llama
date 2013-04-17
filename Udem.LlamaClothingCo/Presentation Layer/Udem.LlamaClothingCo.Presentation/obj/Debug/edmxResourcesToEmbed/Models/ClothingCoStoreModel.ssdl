@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClothingDBModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ClothingDBModelStoreContainer">
+    <EntitySet Name="BillingAddress" EntityType="ClothingDBModel.Store.BillingAddress" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Cart" EntityType="ClothingDBModel.Store.Cart" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Client" EntityType="ClothingDBModel.Store.Client" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ClientType" EntityType="ClothingDBModel.Store.ClientType" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Item" EntityType="ClothingDBModel.Store.Item" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ItemType" EntityType="ClothingDBModel.Store.ItemType" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Sale" EntityType="ClothingDBModel.Store.Sale" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="SaleDetail" EntityType="ClothingDBModel.Store.SaleDetail" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ShippingAddress" EntityType="ClothingDBModel.Store.ShippingAddress" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="User" EntityType="ClothingDBModel.Store.User" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+  <EntityType Name="BillingAddress">
+    <Key>
+      <PropertyRef Name="BillingAddressID" />
+    </Key>
+    <Property Name="Street" Type="nvarchar" MaxLength="100" />
+    <Property Name="Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="nvarchar" MaxLength="100" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsAddressActive" Type="bit" />
+    <Property Name="BillingAddressID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="CartID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="RFC" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsClientActive" Type="bit" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="100" />
+    <Property Name="ClientID" Type="int" Nullable="false" />
+    <Property Name="BillingAddressID" Type="int" />
+    <Property Name="ClientTypeID" Type="int" />
+  </EntityType>
+  <EntityType Name="ClientType">
+    <Key>
+      <PropertyRef Name="ClientTypeID" />
+    </Key>
+    <Property Name="TypeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="ClientTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cost" Type="float" />
+    <Property Name="IsItemActive" Type="bit" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="ItemTypeID" Type="int" />
+  </EntityType>
+  <EntityType Name="ItemType">
+    <Key>
+      <PropertyRef Name="ItemTypeID" />
+    </Key>
+    <Property Name="TypeName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="ItemTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="SaleID" />
+    </Key>
+    <Property Name="SaleTotal" Type="float" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="SaleID" Type="int" Nullable="false" />
+    <Property Name="ClientID" Type="int" />
+    <Property Name="ShippingAddressID" Type="int" />
+  </EntityType>
+  <EntityType Name="SaleDetail">
+    <Key>
+      <PropertyRef Name="SaleDetailID" />
+    </Key>
+    <Property Name="Quantity" Type="int" />
+    <Property Name="SaleDetailID" Type="int" Nullable="false" />
+    <Property Name="SaleID" Type="int" />
+    <Property Name="ItemID" Type="int" />
+  </EntityType>
+  <EntityType Name="ShippingAddress">
+    <Key>
+      <PropertyRef Name="ShippingAddressID" />
+    </Key>
+    <Property Name="Street" Type="nvarchar" MaxLength="100" />
+    <Property Name="Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="nvarchar" MaxLength="100" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsAddressActive" Type="bit" />
+    <Property Name="ShippingAddressID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UsernameID" />
+    </Key>
+    <Property Name="Password" Type="nvarchar" MaxLength="20" />
+    <Property Name="Role" Type="nvarchar" MaxLength="100" />
+    <Property Name="UsernameID" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+</Schema>
