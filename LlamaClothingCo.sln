@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9F6D6B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LlamaClothingCo.Test", "LlamaClothingCo.Test\LlamaClothingCo.Test.csproj", "{612388E0-2BC3-4938-92C4-DDE6708DD713}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothingStoreWeb", "..\Users\Erick\Documents\GitHub\ClothingStoreWeb\ClothingStoreWeb.csproj", "{EB3017BA-8617-46F3-9B2E-E7873081E6A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,16 @@ Global
 		{612388E0-2BC3-4938-92C4-DDE6708DD713}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{612388E0-2BC3-4938-92C4-DDE6708DD713}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{612388E0-2BC3-4938-92C4-DDE6708DD713}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,5 +136,6 @@ Global
 		{2AD7D8B6-0D54-4967-AA1C-BE68399B61C7} = {CD19402E-0268-42BD-88DC-7034899AB8A8}
 		{ABA7B020-020A-46B8-A65A-F1FE3F2726A1} = {FE1860C8-880C-40D4-82EE-0C930F04AC66}
 		{E0D64C00-1D6F-416A-9B9B-243EF7C36AFB} = {FE1860C8-880C-40D4-82EE-0C930F04AC66}
+		{EB3017BA-8617-46F3-9B2E-E7873081E6A9} = {FE1860C8-880C-40D4-82EE-0C930F04AC66}
 	EndGlobalSection
 EndGlobal

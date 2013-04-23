@@ -52,6 +52,11 @@ namespace Udem.LlamaClothingCo.Business
             return Client_Manager.GetByID(id);
         }
 
+        public Client GetClientByEmail(string email)
+        {
+            return Client_Manager.FindBy(s => s.Email.Equals(email)).First();
+        }
+
         public ICollection<Client> GetAllActiveClients()
         {
             return Client_Manager.GetActiveClients().ToList();
@@ -70,6 +75,13 @@ namespace Udem.LlamaClothingCo.Business
         public ICollection<Client> GetClientsByLastName(string lastName)
         {
             return Client_Manager.FindBy(s => s.LastName == lastName).ToList();
+        }
+
+        public bool AuthenticateUser(string email, string password)
+        {
+            Client toAuth = GetClientByEmail(email);
+            return toAuth.Password == password;
+                
         }
         
         #endregion

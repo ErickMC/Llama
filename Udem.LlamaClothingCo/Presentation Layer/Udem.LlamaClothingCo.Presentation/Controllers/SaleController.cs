@@ -18,7 +18,7 @@ namespace Udem.LlamaClothingCo.Presentation.Controllers
 
         public ViewResult Index()
         {
-            var sales = db.Sales.Include("Client").Include("ShippingAddresses");
+            var sales = db.Sales.Include("Client");
             return View(sales.ToList());
         }
 

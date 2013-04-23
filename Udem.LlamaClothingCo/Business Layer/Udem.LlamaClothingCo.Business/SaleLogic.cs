@@ -71,7 +71,7 @@ namespace Udem.LlamaClothingCo.Business
         {
             Sale_Manager.UpdateRecord(sale, item, detail);
         }
-
+       
 
         public ICollection<Sale> GetSalesOfAClient(Client client)
         {
