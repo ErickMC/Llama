@@ -64,6 +64,10 @@ namespace Udem.LlamaClothingCo.Business
             return Item_Manager.FindBy(i => i.ItemType.Equals(type)).ToList();
         }
 
+        public ICollection<Item> GetItemsByType(int type)
+        {
+            return Item_Manager.FindBy(i => i.ItemType.ItemTypeId.Equals(type)).ToList();
+        }
        
     }
 }

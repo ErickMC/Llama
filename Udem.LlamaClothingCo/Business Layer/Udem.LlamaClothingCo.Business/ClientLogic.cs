@@ -54,7 +54,7 @@ namespace Udem.LlamaClothingCo.Business
 
         public Client GetClientByEmail(string email)
         {
-            return Client_Manager.FindBy(s => s.Email.Equals(email)).First();
+            return Client_Manager.FindBy(s => s.Email==email).ToList().First();
         }
 
         public ICollection<Client> GetAllActiveClients()
@@ -65,6 +65,11 @@ namespace Udem.LlamaClothingCo.Business
         public ICollection<Client> GetClientsByType(ClientType type)
         {
             return Client_Manager.FindBy(s => s.ClientType.Equals(type)).ToList();
+        }
+
+        public ICollection<Client> GetClientsByType(int type)
+        {
+            return Client_Manager.FindBy(s => s.ClientType.ClientTypeId.Equals(type)).ToList();
         }
 
         public ICollection<Client> GetClientsByName(string name)

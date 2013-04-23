@@ -73,5 +73,10 @@ namespace Udem.LlamaClothingCo.Business
         {
             return Address_Manager.FindBy(a => a.AddressType.Equals(type)).ToList();
         }
+
+        public ICollection<Address> GetAddressesByType(int type)
+        {
+            return Address_Manager.FindBy(i => i.AddressType.AddressTypeId.Equals(type)).ToList();
+        }
     }
 }

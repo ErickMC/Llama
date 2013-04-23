@@ -63,7 +63,9 @@ namespace LlamaClothingCo.Test
         {
             CreateTestClient();
             ClientLogic logic = new ClientLogic();
-            logic.GetClientByEmail("a@a.com");
+            Client testClient2 = logic.GetClientByID(1);
+            
+            logic.GetClientByEmail(testClient2.Email);
         }
 
         [TestMethod]
