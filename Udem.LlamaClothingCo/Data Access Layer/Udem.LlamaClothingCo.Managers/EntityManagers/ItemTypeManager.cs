@@ -11,9 +11,9 @@ namespace Udem.LlamaClothingCo.Managers
     public class ItemTypeManager : IManager<ItemType>
     {
         TestContext context;
-         public ItemTypeManager()
+         public ItemTypeManager(TestContext context)
         {
-            context = new TestContext();
+            this.context = context;
         }
 
          public ItemType GetByID(int id)

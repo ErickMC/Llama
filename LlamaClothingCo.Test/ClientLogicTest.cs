@@ -21,7 +21,7 @@ namespace LlamaClothingCo.Test
             testClient.ClientTypeId = 1;
             testClient.IsClientActive = true;
             testClient.TelephoneNumber = "555555";
-            testClient.Email = "a@a.com";
+            testClient.Email = @"a@a.com";
             testClient.Password = "aaa";
             testClient.ShippingAddressId = 1;
         }
@@ -64,7 +64,7 @@ namespace LlamaClothingCo.Test
             CreateTestClient();
             ClientLogic logic = new ClientLogic();
             Client testClient2 = logic.GetClientByID(1);
-            
+            String s = testClient2.Email;
             logic.GetClientByEmail(testClient2.Email);
         }
 

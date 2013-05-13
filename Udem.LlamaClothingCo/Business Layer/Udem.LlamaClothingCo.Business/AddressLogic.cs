@@ -15,16 +15,16 @@ namespace Udem.LlamaClothingCo.Business
         {
             get
             {
-                return _addressManager ?? new AddressManager();
+                return _addressManager;
             }
             set
             {
                 _addressManager = value;
             }
         }
-        public AddressLogic()
+        public AddressLogic(TestContext context)
         {
-            Address_Manager = new AddressManager();            
+            Address_Manager = new AddressManager(context);            
         }
 
         public void AddAddress(Address address)

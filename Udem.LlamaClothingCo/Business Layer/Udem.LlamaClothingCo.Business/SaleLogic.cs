@@ -16,7 +16,7 @@ namespace Udem.LlamaClothingCo.Business
         {
             get
             {
-                return _saleManager ?? new SaleManager();
+                return _saleManager;
             }
             set
             {
@@ -30,7 +30,7 @@ namespace Udem.LlamaClothingCo.Business
         {
             get
             {
-                return _itemManager ?? new ItemManager();
+                return _itemManager;
             }
             set
             {
@@ -38,12 +38,31 @@ namespace Udem.LlamaClothingCo.Business
             }
         }
 
-        public SaleLogic()
+        public SaleLogic(TestContext context)
         {
-            Sale_Manager = new SaleManager();
-            Item_Manager = new ItemManager();   
+            Sale_Manager = new SaleManager(context);
+            Item_Manager = new ItemManager(context);   
         }
         #region CRUD
+
+
+        public Sale GetSaleByID(int id)
+        {
+           return Sale_Manager.GetByID(id);
+        }
+
+        public void AddSale(Sale sale)
+        {
+           
+            Sale_Manager.AddRecord(sale);
+        }
+
+        public void AddSale(ICollection<SaleDetail> details)
+        {
+            bool correctTotal = ValidateSaleTotal(details);
+           
+            Sale_Manager.AddRecord(details);
+        }
 
         public void AddSale(Sale sale, ICollection<SaleDetail> details)
         {
@@ -117,6 +136,26 @@ namespace Udem.LlamaClothingCo.Business
         }
 
         public decimal CalculateSaleTotal(Sale sale, ICollection<SaleDetail> details)
+        {
+            decimal sum = 0;
+            decimal cost;
+            foreach (var item in details)
+            {
+                cost = Item_Manager.GetByID(item.ItemId).Cost;
+                sum += item.Quantity * cost;
+                cost = 0;
+            }
+
+            return sum;
+        }
+
+        public bool ValidateSaleTotal(ICollection<SaleDetail> details)
+        {
+            var totalSale = CalculateSaleTotal(details);
+            return true;
+        }
+
+        public decimal CalculateSaleTotal(ICollection<SaleDetail> details)
         {
             decimal sum = 0;
             decimal cost;

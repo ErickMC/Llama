@@ -13,6 +13,7 @@ namespace PruebaSale
 {
     public partial class CreateOrderForm : Form
     {
+
         private ItemLogic itemLogic = new ItemLogic();
         private SaleLogic saleLogic = new SaleLogic();
         private ClientLogic clientLogic = new ClientLogic();

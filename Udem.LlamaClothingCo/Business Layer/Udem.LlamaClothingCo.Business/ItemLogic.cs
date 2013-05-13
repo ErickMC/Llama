@@ -10,21 +10,35 @@ namespace Udem.LlamaClothingCo.Business
     public class ItemLogic
     {
         private ItemManager _itemManager;
+        private ItemTypeManager _itemTypeManager;
 
         public ItemManager Item_Manager
         {
             get
             {
-                return _itemManager ?? new ItemManager();
+                return _itemManager;
             }
             set
             {
                 _itemManager = value;
             }
         }
-        public ItemLogic()
+
+        public ItemTypeManager Item_Type_Manager
         {
-            Item_Manager = new ItemManager();            
+            get
+            {
+                return _itemTypeManager;
+            }
+            set
+            {
+                _itemTypeManager = value;
+            }
+        }
+        public ItemLogic(TestContext context)
+        {
+            Item_Manager = new ItemManager(context);
+            Item_Type_Manager = new ItemTypeManager(context);
         }
 
         public void AddItem(Item item)
@@ -67,6 +81,12 @@ namespace Udem.LlamaClothingCo.Business
         public ICollection<Item> GetItemsByType(int type)
         {
             return Item_Manager.FindBy(i => i.ItemType.ItemTypeId.Equals(type)).ToList();
+        }
+
+        public ICollection<ItemType> GetActiveItemTypes()
+        {
+            return Item_Type_Manager.GetActiveItemTypes().ToList();
+
         }
        
     }

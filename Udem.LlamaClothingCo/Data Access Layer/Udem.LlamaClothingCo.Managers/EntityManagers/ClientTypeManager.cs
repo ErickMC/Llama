@@ -10,9 +10,9 @@ namespace Udem.LlamaClothingCo.Managers
     public class ClientTypeManager : IManager<ClientType>
     {
         TestContext context;
-        public ClientTypeManager()     
+        public ClientTypeManager(TestContext context)     
         {
-            context = new TestContext();
+            this.context = context;
         }
 
         public ClientType GetByID(int id)

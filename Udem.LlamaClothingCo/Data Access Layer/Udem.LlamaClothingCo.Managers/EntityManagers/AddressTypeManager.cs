@@ -11,9 +11,9 @@ namespace Udem.LlamaClothingCo.Managers
     public class AddressTypeManager : IManager<AddressType>
     {
         TestContext context;
-        public AddressTypeManager()
+        public AddressTypeManager(TestContext context)
         {
-            context = new TestContext();
+            this.context = context;
         }
 
         public AddressType GetByID(int id)

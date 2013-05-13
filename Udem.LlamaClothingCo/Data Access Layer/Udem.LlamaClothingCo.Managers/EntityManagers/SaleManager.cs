@@ -11,9 +11,9 @@ namespace Udem.LlamaClothingCo.Managers
     public class SaleManager 
     {
         TestContext context;
-        public SaleManager()
+        public SaleManager(TestContext context)
         {
-            context = new TestContext();
+            this.context = context;
         }
         #region Experimentales
 
@@ -27,6 +27,25 @@ namespace Udem.LlamaClothingCo.Managers
         {
             
             return context.Sales.Where(criteria);
+        }
+
+        public void AddRecord(Sale sale)
+        {
+
+            context.Sales.AddObject(sale);
+            
+            context.SaveChanges();
+        }
+        public void AddRecord(ICollection<SaleDetail> saleDetails)
+        {
+
+            
+            foreach (var item in saleDetails)
+            {
+               
+                context.SaleDetails.AddObject(item);
+            }
+            context.SaveChanges();
         }
         public void AddRecord(Sale sale, ICollection<SaleDetail> saleDetails)
         {

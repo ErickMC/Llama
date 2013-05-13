@@ -10,9 +10,9 @@ namespace Udem.LlamaClothingCo.Managers
     public class ItemManager : IManager<Item>
     {
         TestContext context; 
-        public ItemManager()
+        public ItemManager(TestContext context)
         {
-            context = new TestContext();
+            this.context = context;
         }
 
         public Item GetByID(int id)

@@ -47,7 +47,7 @@ namespace Udem.LlamaClothingCo.Entities
         /// </summary>
         public TestContext() : base("name=TestContext", "TestContext")
         {
-            this.ContextOptions.LazyLoadingEnabled = true;
+            this.ContextOptions.LazyLoadingEnabled = false;
             OnContextCreated();
         }
     
@@ -56,7 +56,7 @@ namespace Udem.LlamaClothingCo.Entities
         /// </summary>
         public TestContext(string connectionString) : base(connectionString, "TestContext")
         {
-            this.ContextOptions.LazyLoadingEnabled = true;
+            this.ContextOptions.LazyLoadingEnabled = false;
             OnContextCreated();
         }
     
@@ -65,7 +65,7 @@ namespace Udem.LlamaClothingCo.Entities
         /// </summary>
         public TestContext(EntityConnection connection) : base(connection, "TestContext")
         {
-            this.ContextOptions.LazyLoadingEnabled = true;
+            this.ContextOptions.LazyLoadingEnabled = false;
             OnContextCreated();
         }
     

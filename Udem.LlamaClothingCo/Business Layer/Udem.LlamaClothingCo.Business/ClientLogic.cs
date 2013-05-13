@@ -17,7 +17,7 @@ namespace Udem.LlamaClothingCo.Business
         {
             get
             {
-                return _clientManager ?? new ClientManager();
+                return _clientManager ;
             }
             set
             {
@@ -25,9 +25,9 @@ namespace Udem.LlamaClothingCo.Business
             }
         }
 
-        public ClientLogic()
+        public ClientLogic(TestContext context)
         {
-            Client_Manager = new ClientManager();
+            Client_Manager = new ClientManager(context);
         }
 
         #region CRUD
