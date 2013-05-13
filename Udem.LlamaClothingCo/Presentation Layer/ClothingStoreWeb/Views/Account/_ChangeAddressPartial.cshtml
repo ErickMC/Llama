@@ -1,0 +1,35 @@
+﻿@model ClothingStoreWeb.Models.LocalAddressModel
+
+<h3>Cambiar Dirección</h3>
+
+@using (Html.BeginForm("Manage", "Account")) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>Información de dirección de facturación</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.Street)
+                @Html.TextBoxFor(m => m.Street)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Number)
+                @Html.TextBoxFor(m => m.Number)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.City)
+                @Html.TextBoxFor(m => m.City)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.State)
+                @Html.TextBoxFor(m => m.State)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.ZipCode)
+                @Html.TextBoxFor(m => m.ZipCode)
+            </li>
+        </ol>
+        <input type="submit" value="Cambiar dirección" />
+    </fieldset>
+}

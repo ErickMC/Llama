@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Udem.LlamaClothingCo.Entities.Item>
+@{
+    ViewBag.Title = "Clothing Co Store";
+}
+
+
+<div class="row">
+<div class="large-12 columns">
+  
+<div class="row">
+ 
+ <!-- Side Bar -->
+        <div class="row">
+
+        <div class="large-2 columns">
+        <div class="hide-for-small panel">
+        <h3>Categories</h3>
+        @{Html.RenderAction("CategoMenu", "Store");}
+        </div>
+        </div>
+<!-- End Side Bar -->
+<!-- Thumbnails -->
+ 
+<div class="large-10 columns">
+
+<div class="row">
+   @{Html.RenderAction("ItemsMenu", "Store");}
+
+<!-- End Thumbnails -->
+ 
+ 
+</div>
+</div>
+</div>
+ 
+
+ 
+</div>
+</div>
+
+

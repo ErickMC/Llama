@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Udem.LlamaClothingCo.Entities.ItemType>
+
+<div id="categories">
+    @foreach (var catego in Model)
+    {
+        <h5 class="subheader">@Html.ActionLink(catego.Description, 
+                "Browse", "Store", 
+                new { id = catego.ItemTypeId }, null)</h5>
+    }
+</div>

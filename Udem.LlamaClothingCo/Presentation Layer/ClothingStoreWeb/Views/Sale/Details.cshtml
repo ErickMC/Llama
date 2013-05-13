@@ -1,0 +1,60 @@
+﻿@model Udem.LlamaClothingCo.Entities.Sale
+@{
+    ViewBag.Title = "Browse Sale Detail";
+}
+ <div class="row">
+<h2>Order Detail</h2>
+<br />
+<div>
+    <div class="row">
+        <div class="large-6 columns">
+            <ul class="vcard large 12 columns">
+            <li class="fn">Client</li>
+            <li class="locality">@Model.Client.FirstName @Model.Client.LastName</li>
+            <li class="locality">@Model.Client.RFC</li>
+            <li><span class="locality">@Model.Client.TelephoneNumber</span></li>
+            <li class="email"><a href="#">@Model.Client.Email</a></li>
+            </ul>
+        </div>
+        <div class="large-6 columns">
+            <ul class="vcard large 12 columns">
+            <li class="fn">Shipping Address</li>
+            <li class="street-address">@Model.ShippingAddress.Street @Model.ShippingAddress.Number</li>
+            <li class="locality">@Model.ShippingAddress.City</li>
+            <li><span class="state">@Model.ShippingAddress.State</span>, <span class="zip">@Model.ShippingAddress.ZipCode</span></li>
+            </ul>
+        </div>
+    </div>
+    
+<table class="responsive large 12 columns">
+   <thead>
+       <tr>
+           <th style="text-align: left">Item Id</th>
+           <th style="text-align: left">Quantity</th>
+           <th style="text-align: left">Unitary Price</th>
+           <th style="text-align: left">SubTotal</th>
+       </tr>
+   </thead>
+  <tbody>
+        @foreach (var saledetail in Model.SaleDetails)
+        {
+            <tr>
+                <td style="text-align: left">@saledetail.Item.Name</td>
+                <td style="text-align: left">@saledetail.Quantity</td>
+                <td style="text-align: left">@saledetail.Item.Cost.ToString("c")</td>
+                <td style="text-align: left">@((saledetail.Quantity * saledetail.Item.Cost).ToString("c"))</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" style="text-align: right">Total:</td>
+            <td style="text-align: left">
+                @Model.SaleTotal.ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+    <p><a href="@Url.Content("~/Sale/Index/2")">Return to My Orders</a></p>
+    </div>
+    </div>

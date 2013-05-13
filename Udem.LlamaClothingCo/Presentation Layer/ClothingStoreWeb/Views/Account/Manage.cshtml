@@ -1,0 +1,33 @@
+﻿@model ClothingStoreWeb.Models.LocalPasswordModel
+@{
+    ViewBag.Title = "Administrar cuenta";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+<p class="message-success">@ViewBag.StatusMessage</p>
+
+<p>Ha iniciado sesión como <strong>@User.Identity.Name</strong>.</p>
+
+@if (ViewBag.HasLocalPassword)
+{
+<div class="row">
+    <div class="large-6 columns">@Html.Partial("_ChangeClientPartial")</div>
+    <div class="large-6 columns">@Html.Partial("_ChangePasswordPartial")</div>
+    </div>
+    <hr />
+    <div class="row">
+    <div class="large-6 columns">@Html.Partial("_ChangeAddressPartial")</div>
+    </div>
+    
+}
+else
+{ 
+    @Html.Partial("_SetPasswordPartial")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

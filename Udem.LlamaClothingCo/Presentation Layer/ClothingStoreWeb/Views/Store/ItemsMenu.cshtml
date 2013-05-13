@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Udem.LlamaClothingCo.Entities.Item>
+
+<div id="products">
+    @foreach (var item in Model)
+    {
+       
+    <div class="large-4 small-6 columns">
+    <img src="http://placehold.it/1000x1000&text=Thumbnail">
+ 
+    <div class="panel">
+        <h4><a href="@Url.Action("Details", "Store", new { id = item.ItemId })">@item.Name</a></h4> 
+        <h5>@item.Description</h5>
+        <h6 class="subheader">$@Html.DisplayFor(modelItem => item.Cost)</h6>
+        <a class="success radius button" href="@Url.Content("~/Cart/Index/"+item.ItemId)">Buy</a>
+    </div>
+    </div>
+    }
+</div>

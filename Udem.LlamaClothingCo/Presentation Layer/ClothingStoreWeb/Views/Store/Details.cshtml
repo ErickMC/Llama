@@ -1,0 +1,40 @@
+﻿@model Udem.LlamaClothingCo.Entities.Item
+
+@{
+    ViewBag.Title = "Product Detail " ;
+}
+<div class="row">
+<div class="large-12 columns">
+  
+<div class="row">
+ 
+ <!-- Side Bar -->
+        <div class="row">
+
+        <div class="large-2 columns">
+        <div class="hide-for-small panel">
+        <h3>Categories</h3>
+        @{Html.RenderAction("CategoMenu", "Store");}
+        </div>
+        </div>
+<!-- End Side Bar -->
+<!-- Thumbnails -->
+ 
+<div class="large-10 columns">
+
+<h2>@Model.Name</h2>
+<div class="row">
+<div class="large-4 columns">
+    <p><img src="http://placehold.it/680x680&text=Thumbnail"></p>
+</div>
+<div class="large-8 columns" id="item-details">
+    <p>Description:@Model.Description</p>
+    <p>Price:$@String.Format("{0:F}", Model.Cost)</p>
+    <p class="success radius button">
+        @Html.ActionLink("Add to cart", "AddToCart", 
+        "ShoppingCart", new { id = Model.ItemId}, "")
+    </p>
+</div>
+</div>
+</div>
+</div>

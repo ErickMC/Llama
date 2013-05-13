@@ -1,0 +1,40 @@
+﻿@model ClothingStoreWeb.Models.LocalClientModel
+
+<h3>Cambiar Información de Perfil</h3>
+
+@using (Html.BeginForm("Manage", "Account")) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>Información de perfil</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.FirstName)
+                @Html.TextBoxFor(m => m.FirstName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.LastName)
+                @Html.TextBoxFor(m => m.LastName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.RFC)
+                @Html.TextBoxFor(m => m.RFC)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Telephone)
+                @Html.TextBoxFor(m => m.Telephone)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.ClientType)
+                @Html.TextBoxFor(m => m.ClientType)
+            </li>
+            
+        </ol>
+        <input type="submit" value="Cambiar Perfil" />
+    </fieldset>
+}

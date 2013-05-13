@@ -1,0 +1,27 @@
+﻿@model Udem.LlamaClothingCo.Entities.Address
+
+@{
+    ViewBag.Title = "Sports Store : Checkout";
+}
+
+<h2>Checkout now</h2>
+Please enter your details, and we'll ship your goods right away!
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <h3>Ship to</h3>
+    @*<div>Name: @Html.EditorFor(details => details.Name)</div>
+    
+    <h3>Address</h3>
+    <div>Line 1: @Html.EditorFor(details => details.Line1)</div>
+    <div>Line 2: @Html.EditorFor(details => details.Line2)</div>
+    <div>Line 3: @Html.EditorFor(details => details.Line3)</div>*@
+    <div>City: @Html.EditorFor(details => details.City)</div>
+    <div>State: @Html.EditorFor(details => details.State)</div>@*
+    <div>Zip: @Html.EditorFor(details => details.Zip)</div>
+    <div>Country: @Html.EditorFor(details => details.Country)</div>*@
+    
+    <p style="text-align: center">
+        <input class="actionButtons" type="submit" value="Complete order" />
+    </p>
+}

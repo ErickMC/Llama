@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Udem.LlamaClothingCo.Entities.Sale>
+@{
+    ViewBag.Title = "Browse Sales";
+}
+ 
+<div class="row">
+<div class="large-8 columns">
+<h3>My Orders</h3>
+<br />
+<table class="responsive" text-align: center">
+   <thead>
+       <tr>
+           <th style="text-align: center">Sale Id</th>
+           <th style="text-align: left">Client</th>
+           <th style="text-align: left">Shipping Address</th>
+           <th style="text-align: left">Date</th>
+           <th style="text-align: left">Sale total</th>
+       </tr>
+   </thead>
+  <tbody>
+        @foreach (var sale in Model)
+        {
+            <tr>
+                <td style="text-align: left">@sale.SaleId</td>
+                <td style="text-align: left">@sale.Client.FirstName @sale.Client.LastName</td>
+                <td style="text-align: left">@sale.ShippingAddress.Street @sale.ShippingAddress.Number</td>
+                <td style="text-align: left">@sale.Date.Date.ToShortDateString()</td>
+                <td style="text-align: left">@sale.SaleTotal.ToString("c")</td>
+                <td><a href="@Url.Action("Details", "Sale", new { id = sale.SaleId })">Details</a></td> 
+                <td>
+                    @using (Html.BeginForm("RemoveFromSales", "Sale"))
+                    {
+                        @Html.Hidden("Idsale", sale.SaleId.ToString())
+                        @Html.Hidden("ReturnUrl", "")
+                        <input type="submit" class="actionButtons" value="Remove" />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    <p><a href="@Url.Content("~/")">Return to Store</a></p>
+    </div>
+    <div class="large-4 columns">
+        <h3>My Account</h3>
+    <ul>
+        <li>@Html.ActionLink("My account", "Index", "Account")</li>
+        <li>@Html.ActionLink("Edit my account", "Manage", "Account")</li>
+    </ul>
+    </div>
+</div>
+
